@@ -3,3 +3,79 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+
+.btn {
+    padding: 15px 30px;
+    font-family: $inter-semiBold;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: 2px solid $darkbrand-color;
+
+    @media (max-width: 991px) {
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+    
+    &.btn-solid {
+        color: #fff;
+        background-color: $darkbrand-color;
+
+        
+        &:hover {
+            color: #fff;
+            background-color: $desert-color;
+            border: 2px solid #fff;
+        }
+    }
+
+    &.btn-arrow {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        color: #fff;
+        background-color: $darkbrand-color;
+
+        &:hover {
+            color: #fff;
+            background-color: $desert-color;
+            border: 2px solid #fff;
+        }
+
+        svg {
+            margin-left: 10px;
+        }
+    }
+
+    &.btn-icon {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        color: #fff;
+        background-color: $darkbrand-color;
+        
+        &:hover {
+            color: #fff;
+            background-color: $desert-color;
+            border: 2px solid #fff;
+        }
+
+        svg {
+            margin-right: 10px;
+        }
+    }
+
+    &.btn-desert {
+        color: #fff;
+        background-color: $desert-color;
+        border: 2px solid $desert-color;
+
+        
+        &:hover {
+            color: #fff;
+            background-color: $darkbrand-color;
+            border: 2px solid $darkbrand-color;
+        }
+    }
+}

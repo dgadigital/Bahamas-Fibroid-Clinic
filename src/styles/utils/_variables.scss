@@ -6,9 +6,14 @@
 
 /// Regular font family
 $font-opensans: 'Open Sans';
+$inter-regular: 'Inter Regular';
+$inter-medium: 'Inter Medium';
+$inter-semiBold: 'Inter Semibold';
+$inter-bold: 'Inter Bold';
+$the-signature: 'The Signature';
 
 /// @type List
-$text-font-stack: $font-opensans, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: $inter-regular, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
@@ -16,23 +21,28 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 
 /// Copy text color
 /// @type Color
-$text-color: #222 !default;
+$text-color: #262613 !default;
 
 /// Main brand color
 /// @type Color
-$brand-color: #E50050 !default;
+$brand-color: #A24502 !default;
+$darkbrand-color: #262613 !default;
+$desert-color: #CD8A39 !default;
+$azura-color: #BAC9D1 !default;
+$lightclay-color: #D6D1CA !default;
+$offwhite-color: #F6F5F3 !default;
 
 /// Light grey
 /// @type Color
-$light-grey: #EDEDED !default;
+$light-grey: #F5F5F5 !default;
 
 /// Medium grey
 /// @type Color
-$mid-grey: #999 !default;
+$mid-grey: #F6F5F3!default;
 
 /// Dark grey
 /// @type Color
-$dark-grey: #444 !default;
+$dark-grey: #D9D9D9 !default;
 
 /// Relative or absolute URL where all assets are served from
 /// @type String
