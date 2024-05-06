@@ -1,5 +1,5 @@
 .hover-cards {
-    padding: 80px 40px;
+    padding: 80px 0px;
 
     .card-container {
         display: flex;
@@ -90,12 +90,12 @@
                     }
 
                     a {
-                        font-size:16px;
-                        color:#fff;
-                        text-decoration: none;
-                        font-weight: 600;
                         position: absolute;
                         bottom: 30px;
+                        font-size:16px;
+                        font-weight: 600;
+                        color:#fff;
+                        text-decoration: none;
                     }
                 }
             }
@@ -110,11 +110,24 @@
     }
 
     .hover-card-footer {
-        padding: 20px 40px;
+        padding: 10px 40px;
         background-color: #D9D9D9;
     
         p {
             color:#282716;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .hover-cards {
+        .card-container  {
+            flex-wrap: wrap;
+            justify-content: center;
+                .card-block {
+                    width: 45%;
+                    margin-bottom: 30px;
+                }
         }
     }
 }
