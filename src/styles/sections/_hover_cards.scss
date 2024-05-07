@@ -135,6 +135,10 @@
 
         h3 {
             color:$text-color;
+
+            @media only screen and (max-width: 1250px) { 
+                width: 100%;
+            }
         }
     
         p {
@@ -164,6 +168,16 @@
                     margin-bottom: 30px;
                 }
         }
+        .hover-card-footer { 
+            justify-content: center;
+            padding: 20px;
+            h3 {
+                margin-right: 0 !important;
+            }
+            .btn {
+                margin-right: 0 !important;
+            }
+        }
     }
 }
 
@@ -180,6 +194,7 @@
             .btn {
                 margin-right: 0 !important;
                 width: 100%;
+                max-width: 280px;
             }
             p {
                 margin-right: 0 !important;
