@@ -33,6 +33,11 @@
 @import
   'pages/home';
 
-// 7. Themes
+
+// 7. Section-specific styles
+@import
+'sections/hover_cards';
+
+// 8. Themes
 @import
   'themes/default';
