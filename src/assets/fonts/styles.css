@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Thesignature';
+  src: url(./Thesignature.eot);
+  src: url(./Thesignature.eot?#iefix) format('embedded-opentype'),
+       url(./Thesignature.otf) format('otf'),
+       url(./Thesignature.svg#Thesignature) format('svg'),
+       url(./Thesignature.ttf) format('truetype'),
+       url(./Thesignature.woff) format('woff'),
+       url(./Thesignature.woff2) format('woff2');
+}

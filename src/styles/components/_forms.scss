@@ -1,0 +1,36 @@
+input.form-control,
+select.form-control,
+textarea.form-control {
+    padding: 18px 28px;
+    font-family: $inter-medium;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #D6D1CA;
+    border-radius: 12px;
+    appearance: none;
+
+    &:focus {
+        box-shadow: none;
+        border-color: #D6D1CA;
+    }
+
+    &::placeholder {
+        color: #D6D1CA;
+        font-family: $inter-medium;
+    }
+
+    &::-moz-placeholder {
+        color: #D6D1CA;
+        font-family: $inter-medium;
+    }
+
+    &::-ms-placeholder {
+        color: #D6D1CA;
+        font-family: $inter-medium;
+    }
+
+    &::-webkit-input-placeholder {
+        color: #D6D1CA;
+        font-family: $inter-medium;
+    }
+}

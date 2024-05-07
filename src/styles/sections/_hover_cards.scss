@@ -10,7 +10,7 @@
         .card-block {
             position: relative;
             width: 25%;
-            height: 430px;
+            min-height: 430px;
             margin: 0 15px;
             transition: transform .8s ease;
 
@@ -85,6 +85,19 @@
                                 background-position: center;
                                 background-repeat: no-repeat;
                             }
+
+                            @media only screen and (max-width: 1199px) {
+                               
+                                margin: 10px 0;
+                                   
+                            }
+
+                            @media only screen and (max-width: 991px) {
+                               
+                                margin: 20px 0;
+                                   
+                            }
+                            
                         }
 
                     }
@@ -96,6 +109,11 @@
                         font-weight: 600;
                         color:#fff;
                         text-decoration: none;
+
+                        @media only screen and (max-width: 1199px) { 
+                            position: relative;
+                            bottom: 0;
+                        }
                     }
                 }
             }
@@ -119,6 +137,17 @@
     }
 }
 
+
+@media only screen and (max-width: 1199px) {
+    .card-back-content {
+        ul {
+            li { 
+                margin: 10px 0;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 991px) {
     .hover-cards {
         .card-container  {
@@ -128,6 +157,29 @@
                     width: 45%;
                     margin-bottom: 30px;
                 }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hover-cards {
+        .card-container  {
+                .card-block {
+                    width: 100%;
+                }
+        }
+   
+        .hover-card-footer {
+            justify-content: center;
+            .btn {
+                margin-right: 0 !important;
+                width: 100%;
+            }
+            p {
+                margin-right: 0 !important;
+                text-align: center;
+                width: 100%;
+            }
         }
     }
 }

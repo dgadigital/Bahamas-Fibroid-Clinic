@@ -5,3 +5,9 @@
 // -----------------------------------------------------------------------------
 
 @include font-face($font-opensans, $base-url + 'fonts/', 'opensans-regular', 'opensans-regular');
+@include font-face($inter-regular, $base-url + 'fonts/', 'Inter-Regular', 'Inter-Regular');
+@include font-face($inter-medium, $base-url + 'fonts/', 'Inter-Medium', 'Inter-Medium');
+@include font-face($inter-semiBold, $base-url + 'fonts/', 'Inter-SemiBold', 'Inter-SemiBold');
+@include font-face($inter-bold, $base-url + 'fonts/', 'Inter-Bold', 'Inter-Bold');
+@include font-face($the-signature, $base-url + 'fonts/', 'Thesignature', 'Thesignature');
+
