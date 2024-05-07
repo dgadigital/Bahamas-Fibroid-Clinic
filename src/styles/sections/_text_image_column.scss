@@ -8,6 +8,15 @@
             }
         }
     }
+    &.bg-img {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        h3 {
+            color:rgba(40, 39, 22, 0.50);
+        }
+    }
     .image-container {
         .image-wrapper {
             position: relative;
