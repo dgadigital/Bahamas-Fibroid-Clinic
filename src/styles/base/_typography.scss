@@ -5,5 +5,45 @@
  */
 body {
   color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+  font: normal 16px / 1.4 $text-font-stack;
+}
+
+h1 {
+  color: #FFF;
+  font-size: 40px;
+  font-family: $inter-semiBold;
+
+  @media (max-width: 991px) {
+    text-align: center;
+    font-size: 28px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+  font-family: $inter-semiBold;
+  text-transform: uppercase;
+
+  @media (max-width: 991px) {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .header-banner & {
+    font-size: 16px;
+    font-family: $inter-semiBold;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.50);
+  }
+}
+
+h3 {
+  font-size: 16px;
+  font-family: $inter-bold;
+  color: #93938A;
+  text-transform: uppercase;
+
+  @media (max-width: 991px) {
+    text-align: center;
+  }
 }
