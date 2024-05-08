@@ -1,4 +1,5 @@
 .media {
+    background-color: $offwhite-color;
     .container-fluid {
         width: 1313px;
         max-width: 100%;
@@ -6,7 +7,6 @@
         flex-direction: column;
         padding-top: 50px; /* Add desired padding value for the top */
         padding-bottom: 50px; /* Add desired padding value for the bottom */
-        gap: 10px;
         flex-shrink: 0;
 
         .row.header {
@@ -25,10 +25,14 @@
         }
 
         .card {
+            width: 321px;
             border: none;
-            
-        }
+            background-color: unset;
 
+            a img{
+                width: 321px;
+            }
+        }
 
         .btn {
             background-color: $darkbrand-color;
@@ -53,12 +57,27 @@
             /* Style for the paragraph after the .btn class */
             font-size: 16px;
             font-family: $inter-bold;
-            color: $text-color; /* Example color */
-            // gap: 10px;
+            color: $text-color;
         }
 
         @media (max-width: 768px) {
             padding: 0 10px; // Adjusted padding for smaller screens
+        }
+        // Insert the new media query here
+        @media (max-width: 991px) {
+            .container-fluid {
+                width: 100%;
+                max-width: none;
+                padding-left: 50px;
+            }
+
+            h1 {
+                float: left;
+            }
+        }
+
+        .row.items {
+            justify-content: center;
         }
     }
 }
