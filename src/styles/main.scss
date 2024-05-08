@@ -10,6 +10,7 @@
 @import
   'vendors/swiper',
   'vendors/bootstrap',
+  'vendors/slick',
   'vendors/font-awesome';
 
 // 3. Base stuff
@@ -31,14 +32,17 @@
 
 // 6. Page-specific styles
 @import
-  'pages/home';
+  'pages/home',
+  'pages/header-banner';
 
 
 // 7. Section-specific styles
 @import
 'sections/hover_cards',
 'sections/text_image_column',
-'sections/icons_with_text';
+'sections/video_gallery',
+'sections/icons_with_text',
+'sections/media';
 
 // 8. Themes
 @import

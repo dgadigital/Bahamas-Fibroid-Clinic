@@ -1,4 +1,7 @@
 .text_and_image_column {
+    padding-top: 0;
+    padding-bottom: 0;
+    
     .image-container {
         .image-wrapper {
             position: relative;
@@ -47,13 +50,15 @@
             margin-bottom: 20px;
         }
 
+        .blockquote {
+            line-height: 40px;
+            font-size: 32px;
+            font-family: $inter-semiBold;
+        }
+
         .text-block {
             padding: 20px 0;
             margin-bottom: 10px;
-
-            &.border-bottom {
-                border-bottom: 1px solid $lightclay-color;
-            }
 
             &.content-bold {
                 font-family: $inter-semiBold;
@@ -97,6 +102,11 @@
                 padding-left: 20px;
                 padding-top: 20px;
                 text-align: left;
+            }
+
+            hr {
+                margin-top: 23px;
+                margin-bottom: 30px;
             }
         }
     }
@@ -143,6 +153,18 @@
                         width: 90%;
                         height: 90%;
                     }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 991px) { 
+            .image-wrapper {
+                text-align: center;
+                padding: 0;
+                
+                img {
+                    position: relative;
+                    width: 90%;
                 }
             }
         }
