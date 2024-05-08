@@ -8,6 +8,7 @@
         padding-top: 50px; /* Add desired padding value for the top */
         padding-bottom: 50px; /* Add desired padding value for the bottom */
         flex-shrink: 0;
+        gap: 20px;
 
         .row.header {
             display: flex;
@@ -25,12 +26,12 @@
         }
 
         .card {
-            width: 321px;
             border: none;
             background-color: unset;
 
-            a img{
-                width: 321px;
+            img{
+                position: relative;
+                width: 100%;
             }
         }
 
@@ -61,14 +62,13 @@
         }
 
         @media (max-width: 768px) {
-            padding: 0 10px; // Adjusted padding for smaller screens
+            padding: 50px 20px 50px 20px; // Adjusted padding for smaller screens
         }
         // Insert the new media query here
         @media (max-width: 991px) {
             .container-fluid {
                 width: 100%;
                 max-width: none;
-                padding-left: 50px;
             }
 
             h1 {
