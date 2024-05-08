@@ -88,6 +88,49 @@
           </div>
       </div>
   </section>
+<!-- Icons with text end -->
+
+<!-- Icons with text variant 2 -->
+<section class="icons_with_text_2">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="top-header">
+                    <h3>Fibroid Treatment Options for women everywhere</h3>
+                    <h2 class="signature-font">Your Treatment Options</h2>
+                    <p>Treatment for fibroids varies based on symptom severity, fibroid size and location, reproductive considerations and available treatment expertise.
+                        Available treatments include:</p>
+                </div>
+            </div>
+        </div>
+        <div class="row items justify-content-center">
+            <div class="col-md-6 col-lg-3">
+                <div class="item">
+                    <img src="assets\images\icon_7.png" alt="Icon 1">
+                    <h2>MEDICATIONS</h2>
+                    <p>To manage symptoms, such as hormonal treatments that regulate menstrual cycles or, target hormones that regulate Fibroid growth.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="item">
+                    <img src="assets\images\icon_6.png" alt="Icon 2">
+                    <h2>Minimally invasive procedures</h2>
+                    <p> This includes Uterine Artery Embolization (UAE), which kills Fibroids by cutting off their blood supply. Alternative procedure is Myolysis, which uses electric current or laser to destroy Fibroids and shrink blood vessels.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="item">
+                    <img src="assets\images\icon_5.png" alt="Icon 3">
+                    <h2>Surgical options</h2>
+                    <p>Myomectomy (removal of fibroids, preserving the uterus) or, Hysterectomy (removal of the uterus as a definitive solution that prevents pregnancies).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Icons with text variant 2 end-->
+
+
 
   <!-- Media Section Start -->
   <section class="media">
@@ -108,19 +151,19 @@
         <div class="row justify-content-center">
             <div class="col-md-6 col-lg-3">
                 <div class="card">
-                    <a href="#"><img src="assets/images/media_1.png" alt="Icon 1"></a>
+                    <a href="#" class="media-link" data-toggle="modal" data-target="#mediaModal1"><img src="assets/images/media_1.png" alt="Icon 1"></a>
                     <p>YOUTUBE CHANNEL: HEALTH CHECK. DO YOU HAVE ADENOMYOSIS? </p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="card">
-                    <a href="#"><img src="assets/images/media_2.png" alt="Icon 2"></a>
+                    <a href="#" class="media-link" data-toggle="modal" data-target="#mediaModal2"><img src="assets/images/media_2.png" alt="Icon 2"></a>
                     <p>YOUTUBE CHANNEL: DR. MIKHAIL HIGGINS</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="card">
-                    <a href="#"><img src="assets/images/media_3.png" alt="Icon 3"></a>
+                    <a href="#" class="media-link" data-toggle="modal" data-target="#mediaModal3"><img src="assets/images/media_3.png" alt="Icon 3"></a>
                     <p>BEYOND HEADLINES: DR. MIKHAIL HIGGINS ON MINIMALLY INVASIVE PROCEDURES</p>
                 </div>
             </div>
@@ -133,7 +176,117 @@
         </div>
     </div>
 </section>
+
+<!-- Modal 1 -->
+<!-- Modal 1 -->
+<div class="modal fade" id="mediaModal1" tabindex="-1" role="dialog" aria-labelledby="mediaModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mediaModalLabel">Media Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Add media details here -->
+                <p>Modal 1 Template</p>
+                <iframe class="video-id" width="450" id="youtubeVideo" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Diploma of Counselling - ACCLM - Success Stories - Dorrien" width="640" height="360" src="https://www.youtube.com/embed/AM5EYO5wWMA?mute=1&autoplay=1" style="z-index: 5;"></iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <!-- Add additional buttons if needed -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#mediaModal1').on('shown.bs.modal', function () {
+        var videoUrl = $('#youtubeVideo').attr('src');
+        $('#youtubeVideo').attr('src', videoUrl);
+    });
+</script>
+
+<!-- End Modal 1 -->
+
+<!-- Modal 2 -->
+<div class="modal fade" id="mediaModal2" tabindex="-1" role="dialog" aria-labelledby="mediaModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mediaModalLabel">Media Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Add media details here -->
+                <p>Modal 2 Template</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <!-- Add additional buttons if needed -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal 2 -->
+
+<!-- Modal 3 -->
+<div class="modal fade" id="mediaModal3" tabindex="-1" role="dialog" aria-labelledby="mediaModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mediaModalLabel">Media Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Add media details here -->
+                <p>Modal 3 Template</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <!-- Add additional buttons if needed -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal 3 -->
 <!-- Media Section End -->
+
+  <!-- Other Services Section Start -->
+  <section class="other-services">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h3>WE OFFER OTHER TRANSFORMATIVE SERVICES</h3>
+            </div>
+        </div>
+        <div class="row header">
+            <div class="col-6">
+                <h1>Explore Additional Healthcare Services at Bahamas Fibroid Interventional Clinic</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <a href="#"><img src="assets/images/media_3.png" alt="Icon 3"></a>
+                    <h2>ADVANCED IMAGING AND BIOPSY SERVICES AT FAMILY MEDICINE CENTER, NASSAU BAHAMAS</h2>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <a href="#"><img src="assets/images/media_4.png" alt="Icon 4"></a>
+                    <h2>REFER YOUR PATIENT TO INTERVENTIONAL RADIOLOGIST, DR. MIKHAIL HIGGINS</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Other Services Section End -->
 
   </main>
 
