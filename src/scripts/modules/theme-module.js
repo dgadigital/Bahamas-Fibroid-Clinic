@@ -27,16 +27,15 @@ AppName.Modules.ThemeModule = (function () {
     nextArrow:"<a href='#' class='slick-arrow slick-next'><img src='/assets/images/slick_right.png'></a>",
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1100,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true
+          infinite: true
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 991,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
