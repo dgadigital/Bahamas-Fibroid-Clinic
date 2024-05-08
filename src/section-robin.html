@@ -305,7 +305,7 @@
          <div class="image-wrapper">
             <img src="/assets/images/video-2.png" alt="image" >
          </div>
-         <button href="#" class="test-video-btn">
+         <button class="test-video-btn" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1">
           <img src="/assets/images/video-icon.png" class="video-icon">
           </button>
          <div class="test-content">
@@ -318,7 +318,7 @@
         <div class="image-wrapper">
            <img src="/assets/images/video-1.png" alt="image" >
         </div>
-        <button href="#" class="test-video-btn" >
+        <button class="test-video-btn" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1">
           <img src="/assets/images/video-icon.png" class="video-icon">
         </button>
         <div class="test-content">
@@ -331,7 +331,7 @@
         <div class="image-wrapper">
           <img src="/assets/images/video-3.png" alt="image" >
         </div>
-        <button href="#" class="test-video-btn">
+        <button class="test-video-btn" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1">
           <img src="/assets/images/video-icon.png" class="video-icon">
         </button>
         <div class="test-content">
@@ -344,7 +344,7 @@
         <div class="image-wrapper">
           <img src="/assets/images/video-1.png" alt="image" >
         </div>
-        <button href="#" class="test-video-btn">
+        <button class="test-video-btn" data-toggle="modal" data-target="#videoModal" data-video-src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1">
           <img src="/assets/images/video-icon.png" class="video-icon">
         </button>
         <div class="test-content">
@@ -356,6 +356,38 @@
    <a href="#" class="btn btn-solid mt-2">VIEW MORE STORIES </a>
   </div>
 </section>
+
+<!-- Video Modal -->
+  <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <iframe class="video-id" width="100%" height="400px" id="youtubeVideo" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="YouTube Video"></iframe>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Include jQuery library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Script to set video source when modal is shown -->
+  <script>
+    $('.test-video-btn').click(function () {
+        var videoSrc = $(this).data('video-src');
+        $('#youtubeVideo').attr('src', videoSrc);
+    });
+
+    // Reset video source when modal is hidden
+    $('#videoModal').on('hidden.bs.modal', function () {
+        $('#youtubeVideo').attr('src', '');
+    });
+  </script>
+  
+  <!-- End Video Gallery -->
+
 
   </main>
 
