@@ -17,6 +17,34 @@ a {
   }
 }
 
+a.arrow-link {
+  position: relative;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $text-color;
+  font-family: $inter-semiBold;
+
+  &:hover {
+    text-decoration: none;
+
+    &:after {
+      right: -42px;
+      transition: 0.3s all;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: -38px;
+    top: 0;
+    display: block;
+    width: 23px;
+    height: 20px;
+    background-image: url(../assets/images/learn-more.png);
+  }
+}
+
 .btn,
 a {
   transition: all 0.2s ease-in-out;
@@ -103,4 +131,8 @@ img {
 section {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+strong {
+  font-family: $inter-bold;
 }

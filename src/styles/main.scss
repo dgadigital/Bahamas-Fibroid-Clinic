@@ -27,7 +27,8 @@
 // 5. Components
 @import
   'components/buttons',
-  'components/forms';
+  'components/forms',
+  'components/cards';
 
 // 6. Page-specific styles
 @import
@@ -40,7 +41,9 @@
 'sections/hover_cards',
 'sections/text_image_column',
 'sections/icons_with_text',
-'sections/media';
+'sections/media',
+'sections/three-column-section',
+'sections/instagram-feed';
 
 // 8. Themes
 @import
