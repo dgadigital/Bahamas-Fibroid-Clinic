@@ -10,6 +10,7 @@
 @import
   'vendors/swiper',
   'vendors/bootstrap',
+  'vendors/slick',
   'vendors/font-awesome';
 
 // 3. Base stuff
@@ -40,10 +41,14 @@
 @import
 'sections/hover_cards',
 'sections/text_image_column',
+'sections/video_gallery',
 'sections/icons_with_text',
 'sections/media',
 'sections/three-column-section',
-'sections/instagram-feed';
+'sections/instagram-feed',
+'sections/icons_with_text_2',
+'sections/testimonials',
+'sections/other_service_cards';
 
 // 8. Themes
 @import

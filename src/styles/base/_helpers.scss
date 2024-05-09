@@ -50,6 +50,14 @@
   }
 }
 
+.bold {
+  font-family: $inter-bold;
+}
+
+.inter-font {
+  font-family: $inter-regular;
+}
+
 .text-capitalize {
   text-transform: capitalize;
 }
