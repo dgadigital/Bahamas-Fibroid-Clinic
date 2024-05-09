@@ -7,23 +7,18 @@ AppName.Modules.ThemeModule = (function () {
   ////////////////////
   const _privateMethod = () => {
     // private stuff
-
-    const swiper = new Swiper('.swiper-container', {
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
-
   };
 
 
   var _instafeed = () => {
-    var feed = new Instafeed({
-      accessToken: 'IGQWRNYUZAmY0I1V18zRnNvRGtiZAmQ0cmIwU3ZANbHNEOTVpVXdKNlVCaWdMZAW9MR3ZAzcnV3ZA2xDQjZAzNVBkaUhQRENPaV9zVnM3aU5OaVN2ZA3JEMTVxT2pxSlh6dV9JUXBWYm5pZAElia3BGSUNOOG53WkJ4YlZARMzQZD',
-      template: '<div class="post image-wrapper"><a href="{{link}}" target="_blank"><img src="{{image}}"></a></div>',
-      limit: 6
-    });
-    feed.run();
+    if ($('section.instagram-feed').length) {
+      var feed = new Instafeed({
+        accessToken: 'IGQWRNYUZAmY0I1V18zRnNvRGtiZAmQ0cmIwU3ZANbHNEOTVpVXdKNlVCaWdMZAW9MR3ZAzcnV3ZA2xDQjZAzNVBkaUhQRENPaV9zVnM3aU5OaVN2ZA3JEMTVxT2pxSlh6dV9JUXBWYm5pZAElia3BGSUNOOG53WkJ4YlZARMzQZD',
+        template: '<div class="post image-wrapper"><a href="{{link}}" target="_blank"><img src="{{image}}"></a></div>',
+        limit: 6
+      });
+      feed.run();
+    }
   }
 
   var _video_gallery = () => {
@@ -92,16 +87,6 @@ AppName.Modules.ThemeModule = (function () {
     });
   }
 
-
-
-  var _instafeed = () => {
-    var feed = new Instafeed({
-      accessToken: 'IGQWRNYUZAmY0I1V18zRnNvRGtiZAmQ0cmIwU3ZANbHNEOTVpVXdKNlVCaWdMZAW9MR3ZAzcnV3ZA2xDQjZAzNVBkaUhQRENPaV9zVnM3aU5OaVN2ZA3JEMTVxT2pxSlh6dV9JUXBWYm5pZAElia3BGSUNOOG53WkJ4YlZARMzQZD',
-      template: '<div class="post image-wrapper"><a href="{{link}}" target="_blank"><img src="{{image}}"></a></div>',
-      limit: 6
-    });
-    feed.run();
-  }
 
   /////////////////////
   // Public Methods //
