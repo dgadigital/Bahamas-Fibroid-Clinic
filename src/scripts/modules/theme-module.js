@@ -74,7 +74,7 @@ AppName.Modules.ThemeModule = (function () {
           }
         },
         {
-          breakpoint: 991,
+          breakpoint: 1024,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1

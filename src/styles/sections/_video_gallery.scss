@@ -1,6 +1,11 @@
 .video-gallery {
     background-color: #C4A784;
 
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .signature-font {
         font-size: 6.5rem;
         line-height: .7em;
