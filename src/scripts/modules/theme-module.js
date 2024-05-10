@@ -29,8 +29,8 @@ AppName.Modules.ThemeModule = (function () {
       speed: 300,
       slidesToShow: 3,
       slidesToScroll: 1,
-      prevArrow:"<a href='#' class='slick-arrow slick-prev'><img src='/assets/images/slick_left.png'></a>",
-      nextArrow:"<a href='#' class='slick-arrow slick-next'><img src='/assets/images/slick_right.png'></a>",
+      prevArrow:"<a href='#' class='slick-arrow slick-prev'><img src='assets/images/slick_left.png'></a>",
+      nextArrow:"<a href='#' class='slick-arrow slick-next'><img src='assets/images/slick_right.png'></a>",
       responsive: [
         {
           breakpoint: 1100,
@@ -63,7 +63,7 @@ AppName.Modules.ThemeModule = (function () {
       slidesToShow: 2,
       slidesToScroll: 1,
       prevArrow:"",
-      nextArrow:"<a href='#' class='slick-arrow slick-next'><img src='/assets/images/slick_right.png'></a>",
+      nextArrow:"<a href='#' class='slick-arrow slick-next'><img src='assets/images/slick_right.png'></a>",
       responsive: [
         {
           breakpoint: 1100,
