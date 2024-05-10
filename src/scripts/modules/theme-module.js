@@ -88,6 +88,21 @@ AppName.Modules.ThemeModule = (function () {
   }
 
 
+  var _video_gallery_testimonial = () => { 
+    // Slick on Video Gallery - Testimonial video slider
+    $('.test-video-btn').click(function () {
+    var videoSrc = $(this).data('video-src');
+    $('#youtubeVideo').attr('src', videoSrc);
+    });
+
+    // Reset video source when modal is hidden
+    $('#videoModal').on('hidden.bs.modal', function () {
+        $('#youtubeVideo').attr('src', '');
+    });
+  }
+
+
+
   /////////////////////
   // Public Methods //
   ///////////////////
@@ -96,6 +111,7 @@ AppName.Modules.ThemeModule = (function () {
     _instafeed();
     _testimonials();
     _video_gallery();
+    _video_gallery_testimonial();
   };
 
   return {
