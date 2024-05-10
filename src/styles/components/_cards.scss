@@ -1,0 +1,36 @@
+.card-content {
+    background-color: #fff;
+   
+    &.dark {
+        background-color: $light-grey;
+    }
+
+    .image-wrapper {
+        padding-bottom: 66%;
+    }
+
+    .title {
+
+        h3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 15px;
+            min-height: 53px;
+            font-size: 22px;
+            text-transform: uppercase;
+            color: $text-color;
+            text-align: left;
+        }
+    }
+
+    .content {
+        padding: 15px 20px 25px 20px;
+
+        p {
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.mini-banner {
+
+    .container {
+        max-width: 1032px;
+    }
+
+    .banner-holder {
+        display: flex;
+        flex-wrap: wrap;
+
+        .image {
+            position: relative;
+            width: 50%;
+
+            @media (max-width: 767px) {
+                padding-bottom: 65%;
+                width: 100%;
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .content {
+            padding: 20px 35px;
+            width: 50%;
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+
+
+            h3 {
+                text-align: left;
+                color: $text-color;
+            }
+
+            h2 {
+                text-align: left
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .bg-desert {
+        background-color: $desert-color;
+    }
+
+    .bg-blaze {
+        background-color: $brand-color;
+    }
+
+    .bg-azura {
+        background-color: $azura-color;
+    }
+}
