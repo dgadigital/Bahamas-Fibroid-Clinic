@@ -1,54 +1,72 @@
-.other-services {
+ section.other-service-cards {
+  width: 1310px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .header {
+    display: flex;
+    padding-left: unset;
+    flex-direction: column;
+    text-align: center;
+
+    .heading-1 {
+      font-size: 20px;
+      color: $darkgray-color;
+    }
+
+    .heading-2 {
+      font-size: 36px;
+      color: $dark-color;
+    }
+  }
+
+  .parent-container {
+    display: flex;
+    flex-wrap: wrap;
+
     .container {
-      padding: 30px 0; // Adjust padding as needed
-  
-      .row {
-        margin-bottom: 10px; // Adjust margin between rows as needed
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      background-color: $lightclay-color;
+      padding-left: unset !important;
+      padding-right: unset !important;
+      margin-bottom: 36px !important; // Added margin-bottom here
+      width: calc(50% - 20px);
+      
+
+      .image {
+        max-width: 100%;
+        height: auto;
+        padding: 0;
       }
-  
-      .row.header {
-        align-items: center;
-        background-color: #fff; // Set background color to white
-        margin-bottom: 10px; // Adjust margin between rows as needed
-  
-        .col-12 {
-          h3 {
-            margin-bottom: 10px; // Adjust margin as needed
-          }
-          h2 {
-            margin-bottom: 20px; // Adjust margin as needed
-          }
-        }
-  
-        .col-md-4 {
-          img {
-            position: relative;
-            padding-left: unset;
-          }
+
+      .text {
+        padding: 50px;
+        font-size: 22px;
+        text-align: left;
+        align-self: center;
+
+        strong {
+          font-size: 28px;
+          color: $dark-color;
         }
 
-
-
-        .col-md-8 {
-  
-          .text-start {
-            text-align: left; // Align text to the left
-  
-            h2 {
-              margin-bottom: 10px; // Adjust margin as needed
-            }
-  
-            p {
-              margin-bottom: 20px; // Adjust margin as needed
-            }
-  
-            .btn {
-              background-color: $darkbrand-color;
-              margin-top: 20px; // Adjust margin as needed
-            }
-          }
+        p {
+          font-size: 18px;
+          color: $darkgray-color;
         }
       }
     }
   }
-  
+
+  @media (max-width: 768px) {
+    .parent-container {
+      .container {
+        width: 100%;
+      }
+    }
+  }
+}
