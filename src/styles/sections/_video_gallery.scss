@@ -13,6 +13,9 @@
         @media only screen and (max-width: 991px) { 
             font-size: 4.5rem;
         }
+        @media only screen and (max-width: 767px) { 
+            font-size: 2.5rem;
+        }
     }
 
     .block-field {
@@ -24,6 +27,11 @@
             padding-bottom: 20px;
             padding-left: 10px;
             padding-right: 10px;
+        }
+
+        @media only screen and (max-width: 767px) { 
+            padding-left: 0px;
+            padding-right: 0px;
         }
 
         h2 {
