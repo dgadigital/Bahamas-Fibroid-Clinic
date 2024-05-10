@@ -101,6 +101,20 @@ AppName.Modules.ThemeModule = (function () {
     });
   }
 
+  var _media_video = () => { 
+    // Slick on Video Gallery - Testimonial video slider
+    $('.media-video').click(function () {
+    var videoSrc = $(this).data('video-src');
+    $('#youtubeVideo').attr('src', videoSrc);
+    console.log("dasd");
+    });
+
+    // Reset video source when modal is hidden
+    $('#mediaVideoModal').on('hidden.bs.modal', function () {
+        $('#youtubeVideo').attr('src', '');
+    });
+  }
+
 
 
   /////////////////////
@@ -112,6 +126,7 @@ AppName.Modules.ThemeModule = (function () {
     _testimonials();
     _video_gallery();
     _video_gallery_testimonial();
+    _media_video();
   };
 
   return {
