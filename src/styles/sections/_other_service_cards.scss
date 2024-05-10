@@ -1,73 +1,67 @@
-.other-service-cards {
-  width: 1310px;
-  max-width: 100%;
+section {
+  max-width: 1310px;
   margin: 0 auto;
 
   .header {
-    display: flex;
-    padding-left: unset;
-    flex-direction: column;
-    text-align: center;
+    // Add your styles for the header class here
 
-    .heading-1 {
-      font-size: 20px;
-      color: $darkgray-color;
-      margin-bottom: 1rem;
+    .header-1 {
+      padding-top: 50px;
+      margin-bottom: 20px;
+
     }
 
-    .heading-2 {
-      font-size: 36px;
-      color: $dark-color;
+    .header-2 {
+      margin-bottom: 30px;
     }
   }
 
-  .parent-container {
+  .container {
     display: flex;
-    flex-wrap: wrap;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: $lightclay-color;
+    margin-bottom: 20px;
+    padding-left: unset !important;
+    padding-right: unset !important;
 
-    .container {
-      display: flex;
-      flex-direction: row;
-      align-items: stretch;
-      background-color: $lightclay-color;
-      padding-left: unset !important;
-      padding-right: unset !important;
-      margin-bottom: 36px !important; // Added margin-bottom here
-      width: calc(50% - 20px);
+    .image {
+      max-width: 100%;
+      height: auto;
+      padding: 0;
+      object-fit: cover;
+    }
 
-      .image-1 {
-        max-width: 100%;
-        height: auto;
-        padding: 0;
+    .text {
+      padding: 50px;
+      text-align: left;
+      align-self: center;
+
+      strong {
+        font-size: 22px; // Adjust the font size here
+        text-transform: uppercase;
       }
 
-      .content {
-        padding: 50px;
-        font-size: 22px;
+      p {
+        font-size: 16px; // Adjust the font size here
+      }
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      min-width: 420px;
+
+      .text {
         text-align: left;
-        align-self: center;
-
-        .text {
-          strong {
-            font-size: 28px;
-            color: $dark-color;
-          }
-
-          p {
-            font-size: 18px;
-            color: $darkgray-color;
-          }
-        }
       }
     }
-  }
 
-  @media (max-width: 768px) {
-    .parent-container {
-      .container {
-        width: 100%;
+    @media (max-width: 991px) {
+      flex-direction: column;
+      min-width: 420px;
+
+      .text {
+        text-align: left;
       }
     }
   }
