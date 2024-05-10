@@ -1,6 +1,11 @@
 .hover-cards {
     padding: 80px 0px;
 
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .card-container {
         display: flex;
         position: relative;
