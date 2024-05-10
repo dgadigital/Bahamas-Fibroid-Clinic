@@ -1,0 +1,278 @@
+// .col-md-6 {
+//     padding-left: 50px; // Add larger padding to the left side
+//     padding-right: 50px; // Add larger padding to the right side
+//     display: flex; // Use flexbox for centering
+//     flex-direction: column;
+//     justify-content: center;
+
+//     .accordion-item {
+//         border: none; // Remove borders from accordion items
+//         margin-bottom: 25px; // Add margin between accordion items
+
+//         .accordion-button {
+//             border: none; // Remove borders from accordion buttons
+//             background-color: transparent; // Remove background color from accordion buttons
+//             color: black; // Set text color for accordion buttons
+//             padding: 0; // Remove padding from accordion buttons
+
+//             .sign {
+//                 display: inline-block;
+//                 width: 40px; // Increase width of the + sign
+//                 height: 40px; // Increase height of the + sign
+//                 border: 1px solid black; // Add border to the + sign
+//                 border-radius: 5px; // Add border radius
+//                 text-align: center;
+//                 line-height: 40px; // Adjust line height to center the + sign
+//                 font-size: 32px; // Increase font size for the + sign
+//                 margin-right: 10px; // Adjust margin for spacing between the + sign and text
+//                 position: relative;
+
+//                 &::before,
+//                 &::after {
+//                     content: '';
+//                     position: absolute;
+//                     width: 1px; // Width of the curve
+//                     height: 7px; // Height of the curve
+//                     top: 50%; // Position the curve vertically centered
+//                     left: 50%; // Position the curve horizontally centered
+//                     transform: translate(-50%, -50%); // Center the curve
+//                 }
+
+//                 &::before {
+//                     transform: translate(-50%, -50%) rotate(90deg); // Rotate to make it look like a curve
+//                 }
+
+//                 &::after {
+//                     transform: translate(-50%, -50%) rotate(180deg); // Rotate to make it look like a curve
+//                 }
+//             }
+//         }
+
+//         .accordion-collapse {
+//             background-color: transparent; // Remove background color from accordion content
+//             border: none; // Remove borders from accordion content
+//             margin-top: 0; // Adjust margin for accordion content
+//             padding: 0; // Remove padding from accordion content
+
+//             .accordion-body {
+//                 padding: 15px; // Add padding to accordion body content
+//             }
+//         }
+//     }
+// }
+
+.faq {
+  * {
+    box-sizing: border-box;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    text-transform: unset !important;
+  }
+
+  h3 {
+    margin-bottom: 20px;
+  }
+
+  .heading-primary {
+    /* font-size: 2em; */
+    text-align: left;
+  }
+
+  .accordion {
+    & dl,
+    &-list {
+      &:after {
+        content: '';
+        display: block;
+        height: 1em;
+        width: 100%;
+        background-color: transparent;
+      }
+    }
+
+    & dd,
+    &__panel {
+      background-color: transparent;
+      font-size: 1em;
+      line-height: 1.5em;
+      padding: 0em 2em 0em 4em; // Updated padding
+
+      p {
+        padding: 0;
+      }
+    }
+
+    position: relative;
+    background-color: transparent;
+  }
+
+  .container {
+    width: 1920px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2em 0 2em 0;
+    display: flex;
+
+    .row {
+      align-items: center;
+    }
+  }
+
+  .accordion-list {
+    padding-left: 100px;
+    padding-right: 345px;
+
+    .accordionTitle,
+    .accordion__Heading {
+      background-color: transparent;
+      text-align: left;
+      font-weight: 700;
+      padding: 0em 0em 1em 4em;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+      transition: background-color 0.5s ease-in-out;
+
+      &:before,
+      &:after {
+        font-size: 1.5em;
+        line-height: 0.5em;
+        padding-right: 0px;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        position: absolute;
+        left: 0;
+      }
+
+      &:before {
+        content: '\2212';
+        opacity: 0;
+      }
+
+      &:after {
+        content: '+';
+        opacity: 1;
+      }
+
+      &:hover {
+        background-color: transparent;
+      }
+
+      &:before,
+      &:after,
+      &Active:before,
+      &Active:after {
+        border: 2px solid black; // Adjust the border width and color as needed
+        padding: 10px; // Adjust the padding to make the border bigger
+        border-radius: 5px; // To make the border a square
+        font-size: 1.2em; // To make the plus and minus signs a bit bigger
+      }
+    }
+  }
+
+  .accordionItem {
+    height: auto;
+    overflow: hidden;
+    max-height: 50em;
+    transition: max-height 1s;
+    margin-bottom: 20px; // Add margin bottom here
+
+    @media screen and (min-width: 48em) {
+      max-height: 15em;
+      transition: max-height 0.5s;
+    }
+
+    &.is-collapsed {
+      max-height: 0;
+    }
+  }
+
+  .no-js .accordionItem.is-collapsed {
+    max-height: auto;
+  }
+
+  .animateIn {
+    animation: accordionIn 0.45s normal ease-in-out both 1;
+  }
+
+  .animateOut {
+    animation: accordionOut 0.45s alternate ease-in-out both 1;
+  }
+
+  @keyframes accordionIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.9) rotateX(-60deg);
+      transform-origin: 50% 0;
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes accordionOut {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    100% {
+      opacity: 0;
+      transform: scale(0.9) rotateX(-60deg);
+    }
+  }
+
+  @media (max-width: 767px) {
+    .container {
+      width: 100%;
+      padding: 0;
+    }
+
+    .col {
+      padding: 0;
+    }
+
+    .img-container {
+      height: 300px; // Adjust the height as needed
+      overflow: hidden;
+    }
+
+    .img-fluid {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  // Add a media query for larger screens to retain the image height
+  @media (min-width: 768px) {
+    .img-container {
+      height: auto; // Retain the image height for larger screens
+    }
+  }
+
+  // Added media queries for tablet, mid-screen, and large screens
+  @media (max-width: 991px) {
+    .accordion-list {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .accordion-list {
+      padding-left: 75px;
+      padding-right: 150px;
+    }
+  }
+
+  @media (min-width: 1200px) and (max-width: 1920px) {
+    .accordion-list {
+      padding-left: 100px;
+      padding-right: 345px;
+    }
+  }
+}
