@@ -13,7 +13,8 @@
 
   <link rel="icon" href="./assets/images/favicon.ico">
   <link rel="stylesheet" type="text/css" href="./styles/main.min.css">
-  <link rel="stylesheet" type="text/css" href="./styles/vendors/slick.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./styles/vendors/slick.css"> -->
+  <script src="./scripts/vendors/instafeed.js"></script>
 				
   <!--[if lte IE 9]>
     <link href="stylesheets/non-responsive.css" rel="stylesheet" />
@@ -359,33 +360,14 @@
 
 <!-- Video Modal -->
   <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-body">
+            <div class="modal-body p-0">
                 <iframe class="video-id" width="100%" height="400px" id="youtubeVideo" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="YouTube Video"></iframe>
             </div>
         </div>
     </div>
   </div>
-
-  <!-- Include jQuery library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- Bootstrap JS -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-  <!-- Script to set video source when modal is shown -->
-  <script>
-    $('.test-video-btn').click(function () {
-        var videoSrc = $(this).data('video-src');
-        $('#youtubeVideo').attr('src', videoSrc);
-    });
-
-    // Reset video source when modal is hidden
-    $('#videoModal').on('hidden.bs.modal', function () {
-        $('#youtubeVideo').attr('src', '');
-    });
-  </script>
-  
   <!-- End Video Gallery -->
 
   <!-- Testimonial -->
@@ -454,6 +436,8 @@
   </main>
 
   <!-- build:js scripts/about.min.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="./scripts/vendors/jquery.min.js"></script>
   <script src="./scripts/vendors/popper.min.js"></script>
   <script src="./scripts/vendors/bootstrap.min.js"></script>
