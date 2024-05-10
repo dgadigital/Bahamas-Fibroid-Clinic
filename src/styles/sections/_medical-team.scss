@@ -1,0 +1,21 @@
+.medical-team {
+
+    h2 {
+        padding-bottom: 15px;
+        text-align: center;
+        font-family: $the-signature;
+        font-size: 99px;
+
+        @media (max-width: 991px) {
+            font-size: 60px;
+        }
+    }
+
+    .card-content {
+        margin-bottom: 20px;
+    }
+
+    .image-wrapper {
+        padding-bottom: 90%;
+    }
+}

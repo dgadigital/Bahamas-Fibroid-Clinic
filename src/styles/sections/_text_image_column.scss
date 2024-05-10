@@ -1,6 +1,11 @@
 .text_and_image_column {
     padding-top: 0;
     padding-bottom: 0;
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
     
     .image-container {
         .image-wrapper {
