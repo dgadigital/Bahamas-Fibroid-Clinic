@@ -1,9 +1,7 @@
- section.other-service-cards {
+.other-service-cards {
   width: 1310px;
   max-width: 100%;
   margin: 0 auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
 
   .header {
     display: flex;
@@ -14,6 +12,7 @@
     .heading-1 {
       font-size: 20px;
       color: $darkgray-color;
+      margin-bottom: 1rem;
     }
 
     .heading-2 {
@@ -25,6 +24,8 @@
   .parent-container {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     .container {
       display: flex;
@@ -35,28 +36,29 @@
       padding-right: unset !important;
       margin-bottom: 36px !important; // Added margin-bottom here
       width: calc(50% - 20px);
-      
 
-      .image {
+      .image-1 {
         max-width: 100%;
         height: auto;
         padding: 0;
       }
 
-      .text {
+      .content {
         padding: 50px;
         font-size: 22px;
         text-align: left;
         align-self: center;
 
-        strong {
-          font-size: 28px;
-          color: $dark-color;
-        }
+        .text {
+          strong {
+            font-size: 28px;
+            color: $dark-color;
+          }
 
-        p {
-          font-size: 18px;
-          color: $darkgray-color;
+          p {
+            font-size: 18px;
+            color: $darkgray-color;
+          }
         }
       }
     }
