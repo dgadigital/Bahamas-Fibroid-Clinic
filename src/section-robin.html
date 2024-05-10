@@ -368,30 +368,13 @@
     </div>
   </div>
 
-  <!-- Include jQuery library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- Bootstrap JS -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <!-- Script to set video source when modal is shown -->
-  <script>
-    $('.test-video-btn').click(function () {
-        var videoSrc = $(this).data('video-src');
-        $('#youtubeVideo').attr('src', videoSrc);
-    });
-
-    // Reset video source when modal is hidden
-    $('#videoModal').on('hidden.bs.modal', function () {
-        $('#youtubeVideo').attr('src', '');
-    });
-  </script>
   
-  <!-- End Video Gallery -->
-
-
   </main>
 
   <!-- build:js scripts/about.min.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="./scripts/vendors/jquery.min.js"></script>
   <script src="./scripts/vendors/popper.min.js"></script>
   <script src="./scripts/vendors/bootstrap.min.js"></script>
