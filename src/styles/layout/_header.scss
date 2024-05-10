@@ -3,3 +3,92 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+header {
+
+    .navbar {
+        background: rgba(40, 39, 22, 0.05);
+        box-shadow: 0px 4px 10px 0px rgba(40, 39, 22, 0.30);
+        backdrop-filter: blur(10px);
+
+        .navbar-toggler .icon-bar {
+            background: $darkbrand-color;
+        }
+
+        .navbar-collapse {
+            justify-content: end;
+
+            .btn-solid {
+                @media (max-width: 1199px) {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .navbar-nav {
+        justify-content: space-between;
+        width: 100%;
+        padding-right: 30px;
+
+        @media (max-width: 1199px) {
+            padding-right: 0;
+        }
+        
+        .nav-item {
+
+            .nav-link {
+                color: #FFF;
+                font-size: 16px;
+                font-family: $inter-semiBold;
+                text-transform: uppercase;
+
+                &:after {
+                    display: none;
+                }
+            }
+
+            .dropdown-menu {
+                top: 56px;
+                padding-bottom: 10px;
+                border-radius: 0;
+
+                @media (max-width: 1199px) {
+                    background: none;
+                    border: 1px solid #fff;
+                }
+
+                .dropdown-item {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    font-size: 14px;
+                    font-family: $inter-medium;
+
+                    @media (max-width: 1199px) {
+                        color: #fff;
+                    }
+
+                    &:focus,
+                    &:active {
+                        // @media (min-width: 1200px) {
+                            color: $text-color;
+                            background-color: #f8f9fa;
+                        // }
+                    }
+
+                    &.title {
+                        font-size: 22px;
+                        font-family: $inter-semiBold;
+                        text-transform: uppercase;
+
+                        @media (max-width: 1199px) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,122 @@
+.header-banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &.main {
+    height: 900px;
+
+    @media (max-width: 991px) {
+      height: 500px;
+    }
+
+    .banner-logo {
+      text-align: center;
+
+      @media (max-width: 991px) {
+        padding-top: 100px;
+        padding-bottom: 20px;
+      }
+    }
+
+    .banner-content {
+      @media (max-width: 991px) {
+        flex-direction: column;
+      }
+
+      .banner-cta {
+        @media (max-width: 991px) {
+          justify-content: center;
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+
+  &.secondary {
+    height: 600px;
+
+    @media (max-width: 991px) {
+      height: 500px;
+    }
+
+    .banner-content {
+      @media (max-width: 991px) {
+        padding-top: 50px;
+      }
+    }
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+  }
+
+  .banner-content {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+
+    @media (max-width: 991px) {
+      position: relative;
+      padding: 0;
+      flex-direction: column;
+    }
+
+    
+    .banner-title {   
+      width: 70%;
+
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+
+      h1 {
+        margin-bottom: 0;
+      }
+    }
+
+    .banner-cta {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+
+      @media (max-width: 991px) {
+        width: 30%;
+        justify-content: center;
+          padding-top: 20px;
+      }
+
+      // .banner-cta {
+      //   @media (max-width: 991px) {
+      //     justify-content: center;
+      //     padding-top: 20px;
+      //   }
+      // }
+
+      .banner-cta-content {
+        text-align: center;
+
+        span {
+          display: block;
+          padding-top: 10px;
+          font-family: $inter-medium;
+          font-size: 14px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

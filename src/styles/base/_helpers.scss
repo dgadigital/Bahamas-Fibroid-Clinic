@@ -33,11 +33,6 @@
   width: 1px;
 }
 
-.row {
-  margin-left: 0;
-  margin-right: 0;
-}
-
 .signature-font {
   font-family: $the-signature;
   text-transform: capitalize;
@@ -50,14 +45,20 @@
   }
 }
 
+.bold {
+  font-family: $inter-bold;
+}
+
+.inter-font {
+  font-family: $inter-regular;
+}
+
 .text-capitalize {
   text-transform: capitalize;
 }
 
 .image-wrapper {
   position: relative;
-  width: 100%;
-  height: 100%;
   img {
       position: absolute;
       top: 0;
