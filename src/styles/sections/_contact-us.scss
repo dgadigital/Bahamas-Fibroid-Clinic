@@ -1,0 +1,86 @@
+.contact-us {
+    .contact-details {
+        .img-container {
+            @media only screen and (max-width: 767px) { 
+                text-align: center;
+            }
+        }
+        .signature-font {
+            color:#282716;
+            border-bottom: 1px solid rgba(40, 39, 22, 0.50);
+            line-height: 60px;
+            font-size: 5rem;
+            @media only screen and (max-width: 767px) { 
+                font-size: 2.5rem;
+            }
+        }
+        .icon-field {
+            margin-bottom: 15px;
+
+            img {
+                margin-right: 10px;
+            }
+            a {
+                color:#282716;
+                font-family:$inter-semiBold ;
+                &:hover {
+                    text-decoration: none;
+                    color: $desert-color;
+                }
+            }
+        }
+        .detail-field {
+            padding: 20px 30px;
+            &.box {
+                padding: 15px 10px;
+                max-width: 515px;
+                border: 2.5px solid #282716;
+                padding: 15px 10px;
+                p{
+                    margin-bottom: 0;
+                }
+                
+            }
+        }
+    }
+    .contact-block {
+        padding: 50px 40px;
+        background-color: $mid-grey;
+        box-shadow: 0px 2px 20px 0px rgba(38, 38, 19, 0.20);
+        border-radius: 17px;
+
+        @media only screen and (max-width: 991px) { 
+            padding: 50px 20px;
+        }
+
+        .contact-form {
+            .form-control {
+                margin-bottom: 25px;
+            }
+            textarea {
+                min-height:160px;
+            }
+            .two-column {
+                input {
+                    &:first-child {
+                        margin-right: 3%;
+                    }
+                    &:last-child {
+                        margin-left: 3%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) { 
+    .contact-details {
+        h2 {
+            text-align: left;
+        }
+        h3 {
+            text-align: left;
+        }
+    }
+}

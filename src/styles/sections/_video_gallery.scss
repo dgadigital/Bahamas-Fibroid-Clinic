@@ -1,0 +1,191 @@
+.video-gallery {
+    background-color: #C4A784;
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .signature-font {
+        font-size: 6.5rem;
+        line-height: .7em;
+
+        @media only screen and (max-width: 991px) { 
+            font-size: 4.5rem;
+        }
+        @media only screen and (max-width: 767px) { 
+            font-size: 2.5rem;
+        }
+    }
+
+    .block-field {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 30px;
+
+        @media only screen and (max-width: 991px) { 
+            padding-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        @media only screen and (max-width: 767px) { 
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        h2 {
+           font-size: 52px;
+           font-family: $inter-bold;
+           color:#282716;
+           @media only screen and (max-width: 1199px) { 
+              font-size: 30px;
+           }
+           @media only screen and (max-width: 991px) { 
+              text-align: left;
+           }
+        }
+        p {
+            color:#282716;
+        }
+    }
+
+    .test-title {
+        font-family: $inter-regular;
+    }
+
+    .testimonials-container {
+        max-width: 1680px;
+        margin: auto;
+        padding: 25px 0;
+
+        @media only screen and (max-width: 1100px) { 
+            margin-bottom: 20px;
+        }
+
+        @media only screen and (max-width: 991px) { 
+            max-width: 768px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 15%;
+            z-index: 2;
+            background-color: #C4A784;
+
+            @media only screen and (max-width: 991px) { 
+                display: none;
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 15%;
+            z-index: 2;
+            background-color: #C4A784;
+
+            @media only screen and (max-width: 991px) { 
+                display: none;
+            }
+        }
+
+        .slick-arrow {
+            position: absolute;
+            top:50%;
+            z-index: 3;
+
+            @media only screen and (max-width: 1100px) { 
+                top:auto;
+                bottom: -12px;
+            }
+
+            img {
+                width: 20px;
+            }
+
+            &.slick-prev  {
+               left: 12%;
+
+                @media only screen and (max-width: 1100px) { 
+                     left: 45%;
+                }
+                @media only screen and (max-width: 767px) { 
+                    left: 40%;
+                }
+            }
+
+            &.slick-next  {
+                right: 12%;
+
+                @media only screen and (max-width: 1100px) { 
+                    right: 45%;
+                }
+                @media only screen and (max-width: 767px) { 
+                    right: 40%;
+                }
+             }
+        }
+
+        .test-block {
+            padding: 0 15px;
+            position: relative;
+
+            .test-video-btn {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 4;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: transparent;
+                border: 0;
+                cursor: pointer; 
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .test-logo {
+                position: absolute;
+                right: 15px;
+                z-index: 2;
+            }
+
+            .image-wrapper {
+                padding: 0;
+                min-height: 300px;
+
+            }
+            .test-content {
+                position: relative;
+                .signature-font {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right:0;
+                    z-index: 2;
+                    text-align: center;
+                    line-height: 80px;
+                    margin: 0;
+                    font-size: 55px;
+                    color: #fff;
+                    background-color: $desert-color;
+                }
+            }
+        }
+    }
+
+
+}
