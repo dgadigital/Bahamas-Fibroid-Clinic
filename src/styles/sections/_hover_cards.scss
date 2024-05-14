@@ -1,6 +1,11 @@
 .hover-cards {
     padding: 80px 0px;
 
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .card-container {
         display: flex;
         position: relative;
@@ -74,6 +79,7 @@
                         li {
                             position: relative;
                             margin: 20px 0;
+                            font-family: $inter-regular;
 
                             &::before {
                                 content: '';
@@ -186,6 +192,8 @@
         .card-container  {
                 .card-block {
                     width: 100%;
+                    margin-left: 0;
+                    margin-right: 0;
                 }
         }
    

@@ -1,0 +1,43 @@
+.cta-banner {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .container {
+        max-width: 1110px;
+    }
+
+    h2 {
+        padding-bottom: 20px;
+        text-align: center;
+        font-family: $inter-regular;
+
+        span {
+            display: block;
+            font-family: $the-signature !important;
+            font-size: 99px;
+
+            @media (max-width: 991px) {
+                font-size: 60px;
+            }
+        }
+    }
+
+    p {
+        padding-bottom: 15px;
+        text-align: center;
+        color: #000;
+        font-family: $inter-medium;
+    }
+
+    .button-area {
+        text-align: center;
+
+        span {
+            display: block;
+            padding-top: 10px;
+            color: #000;
+            font-family: $inter-medium;
+        }
+    }
+}

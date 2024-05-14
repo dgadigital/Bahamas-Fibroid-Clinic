@@ -1,0 +1,55 @@
+.quick-links {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #D6D1CA;
+
+    h3 {
+        padding-right: 20px;
+        margin-right: 38px;
+        color: $text-color;
+
+        @media (max-width: 1199px) {
+            padding-right: 0;
+            padding-bottom: 15px;
+            margin-right: 0;
+        }
+    }
+
+    .links-holder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: 1199px) {
+            flex-direction: column;
+        }
+    }
+
+    .btn-holder {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+
+        a {
+            margin-right: 38px;
+
+            @media (max-width: 1199px) {
+                margin-right: 10px;
+            }
+
+            @media (max-width: 767px) {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 10px
+            }
+    
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
