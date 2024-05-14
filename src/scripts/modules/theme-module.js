@@ -128,7 +128,25 @@ AppName.Modules.ThemeModule = (function () {
     });
   }
 
+var _faq = () => {
+  var acc = document.getElementsByClassName("accordion");
+var i;
 
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    var sign = this.querySelector('.sign');
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+      sign.textContent = '+';
+    } else {
+      panel.style.display = "block";
+      sign.textContent = '-';
+    }
+  });
+}
+}
 
   /////////////////////
   // Public Methods //
@@ -141,6 +159,7 @@ AppName.Modules.ThemeModule = (function () {
     _video_gallery_testimonial();
     _media_video();
     _video_testimonials();
+    _faq();
   };
 
   return {
