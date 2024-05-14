@@ -1,0 +1,99 @@
+.video-testimonials {
+    padding-top: 70px;
+
+    &.bg-image {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .video-block {
+        position: relative;
+        width: 100%;
+        max-width: 884px;
+        margin: auto;
+
+        .image-wrapper{
+            width: 100%;
+            height: 500px;
+            margin: auto;
+
+            @media only screen and (max-width: 991px) { 
+                width: 100%;
+            }
+        }
+        .video-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        .iframe-container {
+            display: none;
+        }
+        .video-block-title {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: $desert-color;
+            text-align: center;
+            color:#fff;
+            
+            .signature-font {
+                font-size: 3.5rem;
+                @media only screen and (max-width: 991px) { 
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+        
+    }
+
+    .test-text-block {
+        p {
+            font-family: $inter-medium;
+            color:#282716;
+        }
+        .profile-desc {
+            h3 {
+                color: #282716;
+                font-family: $inter-semiBold;
+                font-size: 22px;
+                line-height: 32px;
+            }
+        }
+    }
+
+    .slick-arrow {
+        position: absolute;
+        top:50%;
+        z-index: 3;
+        img {
+            width: 20px;
+        }
+
+        &.slick-prev  {
+           left: -9%;
+
+            @media only screen and (max-width: 991px) { 
+                 left: -2%;
+            }
+        }
+
+        &.slick-next  {
+            right: -9%;
+            @media only screen and (max-width: 991px) { 
+                right: -2%;
+            }
+         }
+    }
+
+}
