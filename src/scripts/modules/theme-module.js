@@ -62,7 +62,7 @@ AppName.Modules.ThemeModule = (function () {
       speed: 300,
       slidesToShow: 2,
       slidesToScroll: 1,
-      prevArrow:"",
+      prevArrow:"<a href='#' class='slick-arrow slick-prev'><img src='assets/images/slick_left.png'></a>",
       nextArrow:"<a href='#' class='slick-arrow slick-next'><img src='assets/images/slick_right.png'></a>",
       responsive: [
         {
@@ -115,7 +115,39 @@ AppName.Modules.ThemeModule = (function () {
     });
   }
 
+  var _video_testimonials = () => { 
+    $('.video-icon').click(function() {
+      var videoSrc = $(this).data('video-src');
+      var videoBlock = $(this).closest('.video-block');
+      videoBlock.find('.image-wrapper').hide();
+      videoBlock.find('.video-icon').hide();
+      videoBlock.find('.video-block-title').hide();
+      var iframe = videoBlock.find('iframe');
+      iframe.attr('src', videoSrc);
+      videoBlock.find('.iframe-container').show();
+    });
+  }
 
+
+  var _faq_hub = () => { 
+    var acc = document.getElementsByClassName("accordion"); 
+    var i; 
+
+    for (i = 0; i < acc.length; i++) { 
+      acc[i].addEventListener("click", function() { 
+        this.classList.toggle("active"); 
+        var panel = this.nextElementSibling; 
+        var sign = this.querySelector('.sign'); 
+        if (panel.style.display === "block") { 
+          panel.style.display = "none"; 
+          sign.textContent = '+'; 
+        } else { 
+          panel.style.display = "block"; 
+          sign.textContent = '-'; 
+        } 
+      }); 
+    } 
+  } 
 
   /////////////////////
   // Public Methods //
@@ -127,6 +159,8 @@ AppName.Modules.ThemeModule = (function () {
     _video_gallery();
     _video_gallery_testimonial();
     _media_video();
+    _video_testimonials();
+    _faq_hub();
   };
 
   return {

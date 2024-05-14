@@ -42,6 +42,9 @@
                 text-align: left !important;
             }
         }
+        .slick-prev {
+            display: none !important;
+        }
         .slick-next {
             position: absolute;
             top: 50%;
