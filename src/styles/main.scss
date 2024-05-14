@@ -28,7 +28,8 @@
 // 5. Components
 @import
   'components/buttons',
-  'components/forms';
+  'components/forms',
+  'components/cards';
 
 // 6. Page-specific styles
 @import
@@ -43,11 +44,25 @@
 'sections/video_gallery',
 'sections/icons_with_text',
 'sections/media',
+'sections/three-column-section',
+'sections/instagram-feed',
 'sections/icons_with_text_2',
 'sections/other_service_cards',
 'sections/testimonials',
 'sections/faq_hub',
-'sections/other_service_cards';
+'sections/other_service_cards',
+'sections/medical-team',
+'sections/cta-banner',
+'sections/mini-banner',
+'sections/contact-us',
+'sections/media_spotlight_hub',
+'sections/quick-links',
+'sections/inspiring_patients_testimonials',
+'sections/hub',
+'sections/video_testimonials',
+'sections/pathway_card',
+'sections/single_post_type';
+
 
 
 // 8. Themes
