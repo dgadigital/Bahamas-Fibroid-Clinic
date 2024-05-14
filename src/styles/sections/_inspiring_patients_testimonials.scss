@@ -1,98 +1,95 @@
 .inspiring-patients-testimonials {
   .container {
-    .header {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+
+    .header-container {
+      text-align: left;
       margin-bottom: 60px;
     }
 
-    .patient-stories {
+    .patient-story-container {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 60px;
 
-      .patient-story-container {
-        width: 100%;
+      .patient-story {
+        display: flex;
+        align-items: flex-start;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        gap: 30px;
 
-        @media (min-width: 768px) {
-          width: calc(50% - 15px);
-        }
-
-        @media (min-width: 992px) {
-          width: calc(33.333% - 15px);
-        }
-
-        .patient-story {
+        .patient-container {
           display: flex;
-          margin-bottom: 60px;
+          align-items: center;
+          width: 513.39px;
+          margin-bottom: 30px;
 
-          .patient-container {
-            display: flex;
-            align-items: center;
+          .image-container {
             margin-right: 30px;
 
-            .image-container {
-              margin-right: 20px;
-
-              img {
-                max-width: 100%;
-                height: auto;
-              }
-            }
-
-            .patient-info {
-              strong {
-                font-size: $font-size-lg;
-                font-weight: 600;
-                color: $primary-color;
-                margin-bottom: 10px;
-              }
-
-              p {
-                font-size: $font-size-base;
-                font-weight: 400;
-                color: $secondary-color;
-              }
+            .pt_1 {
+              width: 177.399px;
+              height: 177.399px;
+              max-width: unset !important;
+              border-radius: 50%;
+              object-fit: cover;
             }
           }
 
-          .second-column {
-            flex: 1;
-            margin-left: 30px;
+          .patient-info {
+            width: 306px;
+            display: flex;
+            flex-direction: column;
+            strong {
+              color: #282716;
 
-            .patient-testimonial {
-              p {
-                font-size: $font-size-base;
-                font-weight: 400;
-                color: $primary-color;
-                line-height: 1.5;
-                margin-bottom: 20px;
+              /* Block Heading */
+              font-size: 22px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 32px; /* 145.455% */
+              text-transform: uppercase;
+            }
 
-                &:last-child {
-                  margin-bottom: 30px; // Update the margin-bottom for the last p element to 30px
-                }
-              }
+            p {
+              color: #282716;
 
-              // Add the button styles
-              .read-more-button {
-                display: inline-block;
-                font-size: $font-size-base;
-                font-weight: 600;
-                color: $primary-color;
-                text-decoration: none;
-                text-transform: uppercase;
-                background-color: transparent;
-                border: 2px solid $primary-color;
-                padding: 10px 20px;
-                border-radius: 4px;
-                transition: background-color 0.3s ease;
+              /* BODY */
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 22px; /* 137.5% */
+              margin-top: 10px;
+              text-transform: none;
+            }
+          }
+        }
 
-                &:hover {
-                  background-color: $primary-color;
-                  color: #fff;
-                }
-              }
+        .second-column {
+          .patient-testimonial {
+            // width: 618px;
+            p {
+              color: #282716;
+
+              /* BODY */
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 22px; /* 137.5% */
+            }
+
+            .hidden-text {
+              display: none;
+            }
+
+            .read-more-button {
+              display: inline-block;
+              margin-top: 20px;
+              text-decoration: none;
+              transition: color 0.3s ease;
             }
           }
         }
