@@ -1,0 +1,112 @@
+.hub {
+  .container {
+    .header-container {
+      text-align: left;
+      padding: 20px 0px;
+
+      .header-button-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 36px;
+      }
+    }
+
+    .news-wrapper {
+      display: flex;
+      gap: 36px;
+      margin-bottom: 36px;
+    }
+
+    .news-item {
+      width: 31.5%;
+      background-color: $offwhite-color;
+
+      .image {
+        position: relative;
+        flex: 0 0 100px;
+        margin-right: unset !important;
+        margin-bottom: 10px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        .image-content {
+          position: absolute;
+          bottom: 0;
+          padding: 10px;
+          text-align: left;
+
+          &.color-1 {
+            background-color: $desert-color;
+          }
+
+          &.color-2 {
+            background-color: $azura-color;
+          }
+
+          &.color-3 {
+            background-color: #c06743;
+          }
+
+          p {
+            color: #282716;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px; /* 125% */
+            margin-top: unset !important;
+            margin-bottom: unset !important;
+          }
+        }
+      }
+
+      .content {
+        display: flex;
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        flex: 1;
+
+        .date {
+          color: rgba(40, 39, 22, 0.5);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 26px; /* 162.5% */
+          text-transform: uppercase;
+        }
+
+        h3 {
+          color: #282716;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 32px; /* 145.455% */
+          text-transform: uppercase;
+        }
+
+        p {
+          color: #282716;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 22px; /* 137.5% */
+        }
+
+        a {
+          height: 39px;
+          color: #282716;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
