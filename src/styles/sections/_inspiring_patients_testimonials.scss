@@ -49,6 +49,11 @@
             width: 306px;
             display: flex;
             flex-direction: column;
+
+            @media (max-width: 1200px) {
+              width: 200px;
+            }
+
             strong {
               color: #282716;
 
