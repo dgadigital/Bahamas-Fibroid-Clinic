@@ -156,6 +156,18 @@ AppName.Modules.ThemeModule = (function () {
       iframe.attr('src', videoSrc);
       videoBlock.find('.iframe-container').show();
     });
+
+    // Slick on Video Gallery - Testimonial video slider
+    $('.video-test-btn').click(function () {
+      var videoSrc = $(this).data('video-src');
+      $('#youtubeVideoModalTest').attr('src', videoSrc);
+      });
+  
+      // Reset video source when modal is hidden
+      $('#videoModalTest').on('hidden.bs.modal', function () {
+          $('#youtubeVideoModalTest').attr('src', '');
+    });
+
   }
 
 
