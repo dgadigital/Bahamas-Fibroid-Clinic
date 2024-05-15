@@ -1,0 +1,23 @@
+.all-you-need-to-know {
+    background-color: #fff;
+
+    &.bg-grey {
+        background-color: #F5F5F5;
+    }
+
+    .card-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+        flex-wrap: wrap;
+
+        .card-content {
+            width: 32%;
+
+            @media (max-width: 991px) {
+                margin-bottom: 20px;
+                width: 100%;
+            }
+        }
+    }
+}
