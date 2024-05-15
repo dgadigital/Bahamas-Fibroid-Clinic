@@ -88,6 +88,27 @@
   border-radius: 50%;
 }
 
+.img-circle-wrapper {
+  position: relative;
+  border-radius: 50%;
+  position: relative;
+  border-radius: 50%;
+  width: fit-content;
+  padding-left: 31%;
+  padding-bottom: 31%;
+  margin-bottom: 20px;
+
+  .img-circle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 
 
 
