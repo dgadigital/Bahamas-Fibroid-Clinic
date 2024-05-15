@@ -21,6 +21,12 @@
         margin-bottom: 30px;
         gap: 30px;
 
+        @media (max-width: 991px) {
+            flex-direction: column;
+
+          
+        }
+
         .patient-container {
           display: flex;
           align-items: center;
