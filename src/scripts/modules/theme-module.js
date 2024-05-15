@@ -147,7 +147,30 @@ AppName.Modules.ThemeModule = (function () {
         } 
       }); 
     } 
-  } 
+  }
+
+  var _button_tabs = () => {
+    $(document).ready(function() {
+      // Hide all accordion content on page load
+      $('.accordion-content').hide();
+    
+      // Show the first accordion content by default
+      $('.accordion-content:first').show();
+    
+      // Handle button tab clicks
+      $('.tablinks').click(function() {
+        // Get the data-tab value of the clicked button
+        var tabId = $(this).data('tab');
+    
+        // Hide all accordion content
+        $('.accordion-content').hide();
+    
+        // Show the accordion content with the corresponding data-content value
+        $('.accordion-content[data-content="' + tabId + '"]').show();
+      });
+    });
+    
+  }
 
   /////////////////////
   // Public Methods //
@@ -161,6 +184,7 @@ AppName.Modules.ThemeModule = (function () {
     _media_video();
     _video_testimonials();
     _faq_hub();
+    _button_tabs();
   };
 
   return {
