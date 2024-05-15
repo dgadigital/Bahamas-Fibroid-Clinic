@@ -9,29 +9,119 @@
 
   .date {
     color: rgba(40, 39, 22, 0.50);
+    margin-top: 10px;
     margin-bottom: 10px;
     font-size: 16px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 26px; /* 162.5% */
     text-transform: uppercase;
   }
 
   .card-wrapper {
-      display: flex;
-      justify-content: space-between;
-      padding-top: 15px;
-      margin-bottom: 30px;
-      flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
 
-      .card-content {
-          width: 32%;
-          background-color: $offwhite-color;
+    .card-content {
+      position: relative;
+      width: 32%;
+      background-color: $offwhite-color;
 
-          @media (max-width: 991px) {
-              margin-bottom: 20px;
-              width: 100%;
-          }
+      @media (max-width: 991px) {
+        margin-bottom: 20px;
+        width: 100%;
       }
+
+      .image-women-content {
+        position: absolute;
+        bottom: 0;
+        padding: 10px;
+        text-align: left;
+
+        &.color-1 {
+          background-color: $desert-color;
+        }
+        &.color-2 {
+          background-color: $azura-color;
+        }
+        &.color-3 {
+          background-color: #c06743;
+        }
+
+        @media (max-width: 991px) {
+          width: 100%;
+          text-align: center;
+
+          &.color-1 {
+            background-color: $desert-color;
+          }
+          &.color-2 {
+            background-color: $azura-color;
+          }
+          &.color-3 {
+            background-color: #c06743;
+          }
+        }
+
+        p {
+          color: #282716;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 20px; /* 125% */
+          margin-top: unset !important;
+          margin-bottom: unset !important;
+        }
+      }
+
+      .image-wrapper {
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .image-content {
+        display: flex;
+        width: 214px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        background-color: #fff;
+
+        p {
+          // Add your styles for the p tag here
+          margin-bottom: 0;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+
+      .content {
+        gap: 10px;
+
+        .title {
+          h3 {
+            color: #282716;
+            /* Block Heading */
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600 !important;
+            line-height: 32px; /* 145.455% */
+            margin-bottom: 10px !important;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
   }
 }

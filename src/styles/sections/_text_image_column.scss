@@ -65,6 +65,14 @@
             color:#282716;
         }
 
+        .img-circle-wrapper {
+            @media only screen and (max-width: 991px) {
+                margin: auto;
+                margin-bottom: 20px;
+            }
+
+        }
+
         .text-block {
             padding: 20px 0;
             margin-bottom: 10px;
