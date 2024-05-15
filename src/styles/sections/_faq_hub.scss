@@ -10,7 +10,6 @@
 
   .container {
     margin: 0 auto;
-    padding: 2em 0 2em 0;
     display: flex;
     flex-direction: column;
     background-color: unset !important;
@@ -21,8 +20,6 @@
   }
 
   .accordion-list {
-    padding: 0 30px;
-
     .accordion {
       background-color: #ffff;
       cursor: pointer;
@@ -30,9 +27,10 @@
       width: 100%;
       border: none;
       color: #282716;
-      font-size: 14px;
+      font-size: 22px;
       font-style: normal;
       font-weight: 700;
+      text-transform: uppercase;
       line-height: 20px; /* 142.857% */
       text-align: left;
       outline: none;
@@ -87,6 +85,22 @@
   // Added media queries for tablet, mid-screen, and large screens
   @media (max-width: 991px) {
     .container {
+      .buttons{
+        .nav-buttons{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      .accordion-list {
+        padding: 0 30px;
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .container {
       display: flex;
       flex-direction: column;
 
@@ -101,21 +115,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
     background-color: $light-grey;
 
     .nav-item {
       display: flex;
       align-items: center;
-      padding-left: 10px;
-      padding-right: 10px;
+      justify-content: space-between;
 
       .nav-link {
         color: $text-color;
         background-color: transparent;
         border: unset !important;
         border-radius: 50px;
-        padding: 0.5em 1em;
+        padding-top: 20px;
+        padding-bottom: 20px;
         font-size: 0.9em;
 
         &:hover {
