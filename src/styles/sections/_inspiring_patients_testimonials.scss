@@ -21,11 +21,20 @@
         margin-bottom: 30px;
         gap: 30px;
 
+        @media (max-width: 991px) {
+            flex-direction: column;
+        }
+
         .patient-container {
           display: flex;
           align-items: center;
           width: 513.39px;
           margin-bottom: 30px;
+
+          @media (max-width: 991px) {
+            margin-bottom: 0;
+            
+          }
 
           .image-container {
             margin-right: 30px;
@@ -43,6 +52,11 @@
             width: 306px;
             display: flex;
             flex-direction: column;
+
+            @media (max-width: 1200px) {
+              width: 200px;
+            }
+
             strong {
               color: #282716;
 

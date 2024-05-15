@@ -145,6 +145,30 @@ AppName.Modules.ThemeModule = (function () {
     });
   }
 
+  var _patient_testimonial = () => { 
+    window.addEventListener('DOMContentLoaded', function() {
+      let  hiddenElements = document.querySelectorAll('.hidden-text');
+      hiddenElements.forEach(function(element) {
+        element.style.display = 'none';
+      });
+    });
+  
+   document.querySelectorAll('.read-more-button').forEach((button) => {
+    button.addEventListener('click', (event) => {
+      event.preventDefault();
+      const hiddenText = event.target.parentNode.querySelector('.hidden-text');
+  
+      if (hiddenText.style.display === 'none' || hiddenText.style.display === '') {
+        hiddenText.style.display = 'block';
+        event.target.textContent = 'Read Less';
+      } else {
+        hiddenText.style.display = 'none';
+        event.target.textContent = 'Read More';
+      }
+      console.log(hiddenText.style.display);
+    });
+  });
+  }
   var _video_testimonials = () => { 
     $('.video-icon').click(function() {
       var videoSrc = $(this).data('video-src');
@@ -224,9 +248,11 @@ AppName.Modules.ThemeModule = (function () {
     _video_gallery();
     _video_gallery_testimonial();
     _media_video();
+    _patient_testimonial();
     _video_testimonials();
     _faq_hub();
     _button_tabs();
+
   };
 
   return {
