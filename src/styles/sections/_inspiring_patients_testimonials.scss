@@ -31,6 +31,11 @@
           width: 513.39px;
           margin-bottom: 30px;
 
+          @media (max-width: 991px) {
+            margin-bottom: 0;
+            
+          }
+
           .image-container {
             margin-right: 30px;
 
