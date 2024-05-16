@@ -78,10 +78,19 @@
       }
 
       .image-wrapper {
+        position: relative; /* Add this to make the logo position absolute relative to the image-wrapper */
+
         img {
           object-fit: cover;
           width: 100%;
           height: 100%;
+        }
+
+        .logo {
+          position: absolute;
+          top: 0;
+          right: 0;
+          /* Add any additional styles for the logo here */
         }
       }
 
@@ -106,6 +115,25 @@
         }
       }
 
+      .image-content-logo {
+        width: 10%;
+        height: 13%;
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        top: 13%;
+        right: 5%;
+        transform: translateY(-50%);
+        background-color: #fff;
+
+        img{
+          object-fit: cover;
+        }
+      }
+
       .content {
         gap: 10px;
 
@@ -113,13 +141,21 @@
           h3 {
             color: #282716;
             /* Block Heading */
+            font-family: $inter-semiBold;
             font-size: 22px;
             font-style: normal;
-            font-weight: 600 !important;
             line-height: 32px; /* 145.455% */
             margin-bottom: 10px !important;
             text-transform: uppercase;
           }
+        }
+
+        p {
+          color: #282716; // example color
+          font-family: $inter-regular;
+          font-size: 16px; // example font size
+          line-height: 1.5; // example line height
+          margin-bottom: 10px; // example margin
         }
       }
     }
