@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     background-color: unset !important;
+    padding-top: 40px;
 
     .row {
       align-items: center;
@@ -29,9 +30,15 @@
       text-transform: uppercase;
       line-height: 20px; /* 142.857% */
       text-align: left;
+      border-bottom: solid 1px $lightclay-color;
       outline: none;
       font-size: 15px;
+      margin-bottom: 20px;
       transition: 0.4s;
+
+      &.active {
+        border-bottom: none;
+      }
 
       .sign {
         display: inline-flex;
@@ -47,7 +54,7 @@
         font-size: 14px;
         font-weight: 700;
         color: #282716;
-      }      
+      }
     }
 
     p {
@@ -62,7 +69,9 @@
       padding: 0 18px;
       display: none;
       background-color: white;
+      border-bottom: solid 1px $lightclay-color;
       overflow: hidden;
+      margin-top: -20px;
     }
   }
 
@@ -108,10 +117,19 @@
 
   // Added styles for buttons
   .buttons {
+    position: absolute; // Add this line
+    left: 0; // Add this line
+    right: 0; // Add this line
+    z-index: 1; // Add this line
+    background-color: $light-grey;
+    margin-top: 130px;
+    margin-bottom: 40px;
+
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: $light-grey;
+    margin-bottom: 40px;
 
     .nav-buttons{
       padding-left: 0;
@@ -120,7 +138,7 @@
     .nav-item {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
 
       .nav-link {
         color: $text-color;
@@ -141,15 +159,15 @@
   }
 }
 
-.signature-font { 
-  font-family: $the-signature; 
-  text-transform: capitalize; 
-  color: $text-color; 
-  font-size: 99px; 
-  font-style: normal; 
-  font-weight: 400; 
-  letter-spacing: -1.16px; 
-  @media only screen and (max-width: 767px) { 
-    font-size: 2.5rem; 
-  } 
-} 
+.signature-font {
+  font-family: $the-signature;
+  text-transform: capitalize;
+  color: $text-color;
+  font-size: 99px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -1.16px;
+  @media only screen and (max-width: 767px) {
+    font-size: 2.5rem;
+  }
+}
