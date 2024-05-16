@@ -6,6 +6,10 @@
     .header-container {
       text-align: left;
       margin-bottom: 60px;
+
+      h1 { 
+        @extend .signature-font; 
+      } 
     }
 
     .patient-story-container {
@@ -21,11 +25,20 @@
         margin-bottom: 30px;
         gap: 30px;
 
+        @media (max-width: 991px) {
+            flex-direction: column;
+        }
+
         .patient-container {
           display: flex;
           align-items: center;
           width: 513.39px;
           margin-bottom: 30px;
+
+          @media (max-width: 991px) {
+            margin-bottom: 0;
+            
+          }
 
           .image-container {
             margin-right: 30px;
@@ -43,6 +56,11 @@
             width: 306px;
             display: flex;
             flex-direction: column;
+
+            @media (max-width: 1200px) {
+              width: 200px;
+            }
+
             strong {
               color: #282716;
 
@@ -97,3 +115,16 @@
     }
   }
 }
+
+.signature-font { 
+  font-family: $the-signature; 
+  text-transform: capitalize; 
+  color: $text-color; 
+  font-size: 99px; 
+  font-style: normal;
+  font-weight: 400; 
+  letter-spacing: -1.16px; 
+  @media only screen and (max-width: 767px) { 
+    font-size: 2.5rem; 
+  } 
+} 
