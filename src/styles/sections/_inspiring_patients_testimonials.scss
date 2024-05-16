@@ -1,0 +1,113 @@
+.inspiring-patients-testimonials {
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .header-container {
+      text-align: left;
+      margin-bottom: 60px;
+    }
+
+    .patient-story-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 60px;
+
+      .patient-story {
+        display: flex;
+        align-items: flex-start;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        gap: 30px;
+
+        @media (max-width: 991px) {
+            flex-direction: column;
+        }
+
+        .patient-container {
+          display: flex;
+          align-items: center;
+          width: 513.39px;
+          margin-bottom: 30px;
+
+          @media (max-width: 991px) {
+            margin-bottom: 0;
+            
+          }
+
+          .image-container {
+            margin-right: 30px;
+
+            .pt_1 {
+              width: 177.399px;
+              height: 177.399px;
+              max-width: unset !important;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+
+          .patient-info {
+            width: 306px;
+            display: flex;
+            flex-direction: column;
+
+            @media (max-width: 1200px) {
+              width: 200px;
+            }
+
+            strong {
+              color: #282716;
+
+              /* Block Heading */
+              font-size: 22px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 32px; /* 145.455% */
+              text-transform: uppercase;
+            }
+
+            p {
+              color: #282716;
+
+              /* BODY */
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 22px; /* 137.5% */
+              margin-top: 10px;
+              text-transform: none;
+            }
+          }
+        }
+
+        .second-column {
+          .patient-testimonial {
+            // width: 618px;
+            p {
+              color: #282716;
+
+              /* BODY */
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 22px; /* 137.5% */
+            }
+
+            .hidden-text {
+              display: none;
+            }
+
+            .read-more-button {
+              display: inline-block;
+              margin-top: 20px;
+              text-decoration: none;
+              transition: color 0.3s ease;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,7 @@
 .icons_with_text {
+  &.bg-dark {
+    background-color: #F6F5F3 !important;
+  }
   .container-fluid {
     width: 1313px;
     max-width: 100%;

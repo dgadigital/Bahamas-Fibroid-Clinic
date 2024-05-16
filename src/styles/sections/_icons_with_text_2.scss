@@ -1,4 +1,7 @@
 .icons_with_text_2 {
+    &.bg-dark {
+      background-color: #F6F5F3 !important;
+    }
     .container-fluid {
       width: 1313px;
       max-width: 100%;
@@ -32,7 +35,7 @@
       .item {
         text-align: center;
         margin-bottom: 30px;
-        padding: 0px 25px 0px 25px;
+        padding: 0;
         gap: 20px;
   
         img {
@@ -45,6 +48,7 @@
           font-size: 20px;
           font-weight: bold;
           margin-bottom: 10px;
+          text-transform: uppercase;
         }
   
         p {

@@ -79,6 +79,7 @@
                         li {
                             position: relative;
                             margin: 20px 0;
+                            font-family: $inter-regular;
 
                             &::before {
                                 content: '';
@@ -87,7 +88,7 @@
                                 left: -20px;
                                 width: 6px;
                                 height: 12px;
-                                background-image: url(/assets/images/list-icon.png);
+                                background-image: url(../assets/images/list-icon.png);
                                 background-size: cover;
                                 background-position: center;
                                 background-repeat: no-repeat;
