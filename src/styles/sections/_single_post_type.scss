@@ -1,8 +1,26 @@
 .single-post-type {
     .feature-image {
         margin-bottom: 20px;
+        position: relative;
         img {
             width: 100%;
+        }
+        .post-title {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+            margin-bottom: 0;
+            padding: 20px 40px;
+            background-color: $desert-color;
+            font-size:33px;
+            font-family: $inter-semiBold;
+            @media only screen and (max-width: 991px) { 
+                position: relative;
+                padding: 20px;
+                font-size:25px;
+            }
         }
     }
     .rte {
@@ -30,7 +48,7 @@
                     z-index: 2;
                     width: 22px;
                     height: 22px;
-                    background-image: url(/assets/images/check.png);
+                    background-image: url(../assets/images/check.png);
                     background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat;

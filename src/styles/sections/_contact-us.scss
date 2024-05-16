@@ -30,7 +30,11 @@
             }
         }
         .detail-field {
-            padding: 20px 30px;
+            padding: 10px 30px;
+            @media only screen and (min-width: 1190px) { 
+                padding-left: 45px;
+            }
+            
             &.box {
                 padding: 15px 10px;
                 max-width: 515px;
