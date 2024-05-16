@@ -252,6 +252,7 @@ AppName.Modules.ThemeModule = (function () {
     _video_testimonials();
     _faq_hub();
     _button_tabs();
+
   };
 
   return {
