@@ -139,7 +139,7 @@ AppName.Modules.ThemeModule = (function () {
     });
 
     // Reset video source when modal is hidden
-    $('#videoModalTest').on('hidden.bs.modal', function () {
+    $('#mediaVideoModal').on('hidden.bs.modal', function () {
         $('#youtubeVideoMediaVideoModal').attr('src', '');
     });
   }
