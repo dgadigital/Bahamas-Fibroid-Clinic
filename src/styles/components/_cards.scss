@@ -26,6 +26,14 @@
         }
     }
 
+    .date {
+        color: rgba(40, 39, 22, 0.50);
+        font-family: $inter-bold;
+        font-size: 12.904px;
+        line-height: 20.969px;
+        text-transform: uppercase;
+    }
+
     .content {
         padding: 15px 20px 25px 20px;
 
