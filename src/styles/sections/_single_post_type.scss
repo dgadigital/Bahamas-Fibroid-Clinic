@@ -31,6 +31,10 @@
         }
         p {
             font-family: $inter-medium;
+            line-height: 1.5em;
+        }
+        .pl-4 {
+            padding-left: 1.7rem !important;
         }
         li {
             font-family: $inter-medium;
@@ -78,7 +82,7 @@
             padding: 40px 20px;
         }
         .card-content {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             background-color: #F6F5F3;
             &.azura {
                 .image-wrapper {
@@ -97,6 +101,7 @@
 
             }
             .image-wrapper {
+                padding-bottom: 65%;
                 .inner-title {
                     position: absolute;
                     left: 0;
@@ -119,7 +124,7 @@
                 line-height: 20.969px;
                 text-transform: uppercase;
             }
-            .title {
+            .title h3 {
                 color: #282716;
                 font-family: $inter-semiBold;
                 font-size: 17.743px;
