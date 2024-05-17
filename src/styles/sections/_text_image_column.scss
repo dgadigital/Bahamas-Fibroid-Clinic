@@ -8,6 +8,16 @@
     }
     
     .image-container {
+        &.img-mid-container {
+            display: flex;
+            align-items: center;
+
+            .img-mid-50 {
+                @media only screen and (max-width: 1199px) {
+                    height: 70%;
+                }
+            }
+        }
         .image-wrapper {
             position: relative;
             width: 100%;
