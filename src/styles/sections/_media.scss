@@ -1,10 +1,6 @@
 .media {
     background-color: $offwhite-color;
-    .container-fluid {
-        width: 1313px;
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
+    .container {
         padding-top: 50px; /* Add desired padding value for the top */
         padding-bottom: 50px; /* Add desired padding value for the bottom */
         flex-shrink: 0;
@@ -13,26 +9,25 @@
         .row.header {
             display: flex;
 
+            @media only screen and (max-width: 991px) {
+                .col-md-12 {
+                    text-align: center !important;
+                }
+            }
+
             h3 {
-                font-family: $inter-bold;
-                font-size: 16px;
-                font-weight: bold;
                 margin-bottom: 10px;
+            } 
+
+            .signature-font {
+                font-size: 5.8rem;
+                line-height: 1em;
+                margin-bottom: 10px;
+                @media only screen and (max-width: 767px) {
+                    font-size: 4.5rem;
+                }
             }
 
-            h1 {
-                color: $text-color;
-            }
-        }
-
-        .card {
-            border: none;
-            background-color: unset;
-
-            img{
-                position: relative;
-                width: 100%;
-            }
         }
 
         .btn {
@@ -54,13 +49,6 @@
             }
         }
 
-        p {
-            /* Style for the paragraph after the .btn class */
-            font-size: 16px;
-            font-family: $inter-bold;
-            color: $text-color;
-        }
-
         @media (max-width: 768px) {
             padding: 50px 20px 50px 20px; // Adjusted padding for smaller screens
         }
@@ -78,6 +66,68 @@
 
         .row.items {
             justify-content: center;
+        }
+        .media-list {
+            display: flex;
+            @media only screen and (max-width: 1199px) {
+                flex-wrap: wrap;
+            }
+            @media only screen and (max-width: 767px) {
+                padding: 0  10px;
+            }
+            .test-block {
+                width: 33%;
+                padding: 0 5px;
+                position: relative;
+
+                @media only screen and (max-width: 1199px) {
+                    width: 50%;
+                }
+                @media only screen and (max-width: 767px) {
+                    width: 100%;
+                }
+
+                .video-mediaVideoModal-btn {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 4;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: transparent;
+                    border: 0;
+                    cursor: pointer; 
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    img {
+                        position: relative;
+                        width: fit-content;
+                        height: fit-content;
+                    }
+                }
+
+                .test-logo {
+                    position: absolute;
+                    right: 15px;
+                    z-index: 2;
+                }
+
+                .image-wrapper {
+                    padding-bottom: 55%;
+
+                }
+                
+                p {
+                    color:#282716;
+                    font-family: $inter-semiBold;
+                }
+            }
         }
     }
 }
