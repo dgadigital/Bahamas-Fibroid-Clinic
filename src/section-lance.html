@@ -40,7 +40,7 @@
 <!-- Icons with text section start -->
 <!-- justify-content-center to center the column items when removed-->
 <!--  -->
-    <section class="icons_with_text bg-dark">
+    <section class="icons_with_text_main icons_with_text bg-dark">
       <div class="container-fluid">
           <div class="row">
               <div class="col-12">
@@ -80,7 +80,7 @@
                   </div>
               </div>
           </div>
-          <div class="row">
+          <div class="row mt-3">
               <div class="col-12 text-center">
                   <a href="#" class="btn btn-solid mb-2 mt-2 ">BOOK A CONSULTATION</a>
                   <p>Get Started on Your Path to Wellness.</p>
@@ -91,7 +91,7 @@
 <!-- Icons with text end -->
 
 <!-- Icons with text variant 2 -->
-<section class="icons_with_text_2 bg-dark">
+<section class="icons_with_text_main icons_with_text_2 bg-dark">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
@@ -132,45 +132,60 @@
 
   <!-- Media Section Start -->
   <section class="media">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-12">
                 <h3>MEDIA SPOTLIGHT</h3>
             </div>
         </div>
         <div class="row header">
-            <div class="col-6">
-                <h1 class="signature-font">Stay informed</h1>
+            <div class="col-lg-6 col-md-12">
+                <p class="signature-font">Stay informed</p>
             </div>
-            <div class="col-6 text-right">
+            <div class="col-lg-6 col-md-12 text-right mb-4">
                 <a href="#" class="btn btn-solid">VIEW ALL MEDIA</a>
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <a class="media-video" href="#" class="media-link" data-toggle="modal" data-target="#mediaVideoModal" data-video-src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1"><img class="video-1" src="assets/images/media_1.png" alt="Media 1"></a>
-                    <p>YOUTUBE CHANNEL: HEALTH CHECK. DO YOU HAVE ADENOMYOSIS? </p>
-                </div>
+          <div class="media-list">
+            <div class="test-block">
+              <img src="assets/images/small-logo.png" class="test-logo">
+              <div class="image-wrapper">
+                 <img src="assets/images/mediav2-1.png" alt="image" >
+                 <button class="video-mediaVideoModal-btn" data-toggle="modal" data-target="#mediaVideoModal" data-video-src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1">
+                  <img src="assets/images/video-icon.png" class="video-icon">
+                 </button>
+              </div>
+              <p class="mt-2">YOUTUBE CHANNEL: HEALTH CHECK. DO YOU HAVE ADENOMYOSIS? </p>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <a class="media-video" href="#" class="media-link" data-toggle="modal" data-target="#mediaVideoModal" data-video-src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1"><img  class="video-2" src="assets/images/media_2.png" alt="Media 2"></a>
-                    <p>YOUTUBE CHANNEL: DR. MIKHAIL HIGGINS</p>
-                </div>
+            <div class="test-block">
+              <img src="assets/images/small-logo.png" class="test-logo">
+              <div class="image-wrapper">
+                 <img src="assets/images/mediav2-2.png" alt="image" >
+                 <button class="video-mediaVideoModal-btn" data-toggle="modal" data-target="#mediaVideoModal" data-video-src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1">
+                  <img src="assets/images/video-icon.png" class="video-icon">
+                 </button>
+              </div>
+               <p class="mt-2">YOUTUBE CHANNEL: DR. MIKHAIL HIGGINS</p>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <a class="media-video" href="#" class="media-link" data-toggle="modal" data-target="#mediaVideoModal" data-video-src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1"><img class="video-3" src="assets/images/media_3.png" alt="Media 3"></a>
-                    <p>BEYOND HEADLINES: DR. MIKHAIL HIGGINS ON MINIMALLY INVASIVE PROCEDURES</p>
-                </div>
+            <div class="test-block">
+              <img src="assets/images/small-logo.png" class="test-logo">
+              <div class="image-wrapper">
+                 <img src="assets/images/mediav2-3.png" alt="image" >
+                 <button class="video-mediaVideoModal-btn" data-toggle="modal" data-target="#mediaVideoModal" data-video-src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1">
+                  <img src="assets/images/video-icon.png" class="video-icon">
+                 </button>
+              </div>
+               <p class="mt-2">BEYOND HEADLINES: DR. MIKHAIL HIGGINS ON MINIMALLY INVASIVE PROCEDURES</p>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <a href="#"><img class="image-1" src="assets/images/media_4.png" alt="Media 4"></a>
-                    <p>ADENOMYOSIS AWARENESS MONTH: STARTING THE CONVERSATION</p>
-                </div>
+            <div class="test-block">
+              <img src="assets/images/small-logo.png" class="test-logo">
+              <div class="image-wrapper">
+                 <img src="/assets/images/media_4.png" alt="image" >
+              </div>
+              <p class="mt-2">YOUTUBE CHANNEL: HEALTH CHECK. DO YOU HAVE ADENOMYOSIS? </p>
             </div>
+          </div>
         </div>
     </div>
 </section>
@@ -179,8 +194,8 @@
 <div class="modal fade" id="mediaVideoModal" tabindex="-1" role="dialog" aria-labelledby="mediaVideoModal" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-body p-0">
-                <iframe class="mediaVideoModal" width="100%" height="400px" id="youtubeVideo" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="YouTube Video"></iframe>
+            <div class="modal-body p-0 full-video">
+                <iframe class="mediaVideoModal" width="100%" id="youtubeVideoMediaVideoModal" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="YouTube Video"></iframe>
             </div>
         </div>
     </div>
@@ -470,7 +485,7 @@
       <div class="patient-story">
         <div class="patient-container">
           <div class="image-container">
-            <img src="assets/images/patient_1.png" class="pt_1" alt="Patient_1">
+            <img src="assets/images/patient_1.png" class="image-circle" alt="Patient_1">
           </div>
           <div class="patient-info">
             <strong>SHANISKA</strong>
@@ -492,7 +507,7 @@
                 <p>I had the procedure done in 2023. Now in my forties, my life has totally changed!!! I am free!!!No more heavy bleeding!!! No more awful periods!! No more embarrassment!! I am so glad I didn’t take the advice of any of the doctors! I would encourage any woman to choose this option. God has the final say!!!  It was a YES for me!!</p>
                 <p>-Shaniska</p>
               </span>
-            <a href="#" class="read-more-button btn">Read More</a>
+            <div class="read-more-button btn">Read More</div>
           </div>
         </div>
       </div>
@@ -502,7 +517,7 @@
       <div class="patient-story">
         <div class="patient-container">
           <div class="image-container">
-            <img src="assets/images/patient_2.png" class="pt_1" alt="Patient_2">
+            <img src="assets/images/patient_2.png" class="image-circle" alt="Patient_2">
           </div>
           <div class="patient-info">
             <strong>ASIA</strong>
@@ -519,7 +534,7 @@
               <p>-Asia</p>
             </span>
 
-            <a href="#" class="read-more-button btn">Read More</a>
+            <div class="read-more-button btn">Read More</div>
           </div>
         </div>
       </div>
@@ -528,7 +543,7 @@
       <div class="patient-story">
         <div class="patient-container">
           <div class="image-container">
-            <img src="assets/images/patient_3.png" class="pt_1" alt="Patient_3">
+            <img src="assets/images/patient_3.png" class="image-circle" alt="Patient_3">
           </div>
           <div class="patient-info">
             <strong>KEESHAN</strong>
@@ -544,7 +559,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt in nibh a porta. Vivamus consequat lorem eu enim pulvinar, id fringilla leo porta. Vestibulum congue sem in enim faucibus, mollis gravida lorem rhoncus. Fusce fringilla nisl eget aliquam finibus. Nullam et neque non ex sodales pellentesque. Quisque ac orci vel arcu mollis semper non eu mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Cras mattis nisi orci, vitae pulvinar tellus finibus id. Morbi eleifend vestibulum turpis, quis rhoncus ipsum commodo et.</p>
               <p>-Keeshan</p>
             </span>
-            <a href="#" class="read-more-button btn">Read More</a>
+            <div class="read-more-button btn">Read More</div>
           </div>
         </div>
       </div>
@@ -553,7 +568,7 @@
       <div class="patient-story">
         <div class="patient-container">
           <div class="image-container">
-            <img src="assets/images/patient_4.png" class="pt_1" alt="Patient_1">
+            <img src="assets/images/patient_4.png" class="image-circle" alt="Patient_1">
           </div>
           <div class="patient-info">
             <strong>ROCHELLE</strong>
@@ -569,7 +584,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt in nibh a porta. Vivamus consequat lorem eu enim pulvinar, id fringilla leo porta. Vestibulum congue sem in enim faucibus, mollis gravida lorem rhoncus. Fusce fringilla nisl eget aliquam finibus. Nullam et neque non ex sodales pellentesque. Quisque ac orci vel arcu mollis semper non eu mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Cras mattis nisi orci, vitae pulvinar tellus finibus id. Morbi eleifend vestibulum turpis, quis rhoncus ipsum commodo et.</p>
               <p>-Rochelle</p>
             </span>
-            <a href="#" class="read-more-button btn">Read More</a>
+            <div class="read-more-button btn">Read More</div>
           </div>
         </div>
       </div>
@@ -578,7 +593,7 @@
       <div class="patient-story">
         <div class="patient-container">
           <div class="image-container">
-            <img src="assets/images/patient_5.png" class="pt_1" alt="Patient_1">
+            <img src="assets/images/patient_5.png" class="image-circle" alt="Patient_1">
           </div>
           <div class="patient-info">
             <strong>TAMISHA</strong>
@@ -594,7 +609,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt in nibh a porta. Vivamus consequat lorem eu enim pulvinar, id fringilla leo porta. Vestibulum congue sem in enim faucibus, mollis gravida lorem rhoncus. Fusce fringilla nisl eget aliquam finibus. Nullam et neque non ex sodales pellentesque. Quisque ac orci vel arcu mollis semper non eu mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Cras mattis nisi orci, vitae pulvinar tellus finibus id. Morbi eleifend vestibulum turpis, quis rhoncus ipsum commodo et.</p>
               <p>-Tamisha</p>
             </span>
-            <a href="#" class="read-more-button btn">Read More</a>
+            <div class="read-more-button btn">Read More</div>
           </div>
         </div>
       </div>

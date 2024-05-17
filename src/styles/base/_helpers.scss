@@ -44,7 +44,7 @@
     font-size: 3.5rem;
   }
   @media only screen and (max-width: 767px) {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -109,6 +109,12 @@
     bottom: 0;
     width: 100%;
     height: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .pr-mid-5 {
+    padding-right: 3.2rem !important;
   }
 }
 
