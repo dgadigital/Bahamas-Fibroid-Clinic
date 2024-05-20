@@ -8,6 +8,14 @@
     }
     
     .image-container {
+        &.mid-pt-5 {
+            @media only screen and (max-width: 991px) {
+                padding-top: 40px !important;
+            }
+            @media only screen and (max-width: 767px) {
+                padding-top: 20px !important;
+            }
+        }
         &.img-mid-container {
             display: flex;
             align-items: center;
@@ -26,7 +34,7 @@
             width: 100%;
             height: 100%;
             @media only screen and (max-width: 991px) {
-                padding: 35% 0;
+                padding: 40% 0;
             }
             @media only screen and (max-width: 767px) {
                 padding: 55% 0;
@@ -89,6 +97,10 @@
         .text-block {
             padding: 20px 0;
             margin-bottom: 10px;
+        
+            &.content-left {
+                text-align: left;
+            }
 
             &.content-bold {
                 font-family: $inter-semiBold; 
@@ -170,7 +182,7 @@
                     }
                 }
                 .image-wrapper {
-                    padding: 35% 0;
+                    padding: 40% 0;
                 }
             }
 
