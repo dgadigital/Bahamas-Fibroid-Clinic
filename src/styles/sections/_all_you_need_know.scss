@@ -78,6 +78,13 @@
                 &.large-font {
                     font-size: 4.5rem;
                     line-height: normal;
+                    @media only screen and (max-width: 991px) { 
+                        font-size: 2.5rem;
+                        padding: 0 5px;
+                    }
+                    @media only screen and (max-width: 767px) { 
+                        font-size: 1.7rem;
+                    }
                 }
             }
         }
