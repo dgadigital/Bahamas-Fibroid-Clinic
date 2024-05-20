@@ -4,6 +4,21 @@
   max-width: 1310px;
   margin: 0 auto;
 
+  .signature-font {
+    font-size: 6.5rem;
+    margin-bottom: 0;
+    padding: 0 20px;
+    @media only screen and (max-width: 1190px) { 
+      font-size: 4.5rem;
+    }
+    @media only screen and (max-width: 991px) { 
+      font-size: 3.5rem;
+    }
+    @media only screen and (max-width: 767px) { 
+      font-size: 3rem;
+    }
+  }
+
   .header {
     // Add your styles for the header class here
     .header-1 {
@@ -53,20 +68,29 @@
       }
 
       .text {
-        padding: 50px 35px;
+        padding: 50px 40px;
         width: 65%;
 
         @media (max-width: 991px) {
           width: 100%;
+          padding: 50px 20px;
+        }
+        @media only screen and (max-width: 991px) { 
+          text-align: center;
         }
 
-        strong {
+        h3 {
           font-size: 22px; // Adjust the font size here
           text-transform: uppercase;
+          font-family: $inter-semiBold;
+          color:#282716;
+          margin-bottom: 15px;
         }
 
         p {
           font-size: 16px; // Adjust the font size here
+          font-family: $inter-medium;
+
         }
       }
     }
@@ -151,7 +175,6 @@
 
     @media (max-width: 768px) { 
       flex-direction: column; 
-      min-width: 420px; 
 
       .text { 
         text-align: left; 
@@ -162,7 +185,6 @@
 
     @media (max-width: 991px) { 
       flex-direction: column; 
-      min-width: 420px; 
 
       .text { 
         text-align: left; 
