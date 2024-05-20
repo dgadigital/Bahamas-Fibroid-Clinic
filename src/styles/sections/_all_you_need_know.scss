@@ -75,6 +75,10 @@
                 @media only screen and (max-width: 767px) { 
                     font-size: 1.7rem;
                 }
+                &.large-font {
+                    font-size: 4.5rem;
+                    line-height: normal;
+                }
             }
         }
 
@@ -112,7 +116,7 @@
         .box-list {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: flex-start;
             margin-top: 25px;
             .box {
                 display: flex;
