@@ -16,6 +16,9 @@
                 @media only screen and (max-width: 1199px) {
                     height: 70%;
                 }
+                @media only screen and (max-width: 991px) {
+                    height: auto;
+                }
             }
         }
         .image-wrapper {
@@ -143,6 +146,36 @@
                 padding-right: 3em;
             }
         }
+    }
+    &.col-12-ipadpro {
+        .row {
+            @media only screen and (max-width: 1024px) {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            .col-md-12 {
+               
+                @media only screen and (max-width: 1024px) {
+                    width: 100% !important;
+                    max-width: 100% !important;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .content-container {
+                    @media only screen and (max-width: 1024px) {
+                        padding-bottom: 0;
+                    }
+                }
+                .image-wrapper {
+                    padding: 35% 0;
+                }
+            }
+
+        }
+       
     }
     &.bg-img {
         background-position: center;
