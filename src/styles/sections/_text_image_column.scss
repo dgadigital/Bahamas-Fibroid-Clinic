@@ -8,12 +8,33 @@
     }
     
     .image-container {
+        &.mid-pt-5 {
+            @media only screen and (max-width: 991px) {
+                padding-top: 40px !important;
+            }
+            @media only screen and (max-width: 767px) {
+                padding-top: 20px !important;
+            }
+        }
+        &.img-mid-container {
+            display: flex;
+            align-items: center;
+
+            .img-mid-50 {
+                @media only screen and (max-width: 1199px) {
+                    height: 70%;
+                }
+                @media only screen and (max-width: 991px) {
+                    height: auto;
+                }
+            }
+        }
         .image-wrapper {
             position: relative;
             width: 100%;
             height: 100%;
             @media only screen and (max-width: 991px) {
-                padding: 35% 0;
+                padding: 40% 0;
             }
             @media only screen and (max-width: 767px) {
                 padding: 55% 0;
@@ -49,6 +70,7 @@
             margin: auto;
             padding: 40px 20px !important;
             text-align: center;
+            max-width:100%;
         }
 
         .profile-img {
@@ -76,6 +98,10 @@
         .text-block {
             padding: 20px 0;
             margin-bottom: 10px;
+        
+            &.content-left {
+                text-align: left;
+            }
 
             &.content-bold {
                 font-family: $inter-semiBold; 
@@ -133,6 +159,36 @@
                 padding-right: 3em;
             }
         }
+    }
+    &.col-12-ipadpro {
+        .row {
+            @media only screen and (max-width: 1024px) {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            .col-md-12 {
+               
+                @media only screen and (max-width: 1024px) {
+                    width: 100% !important;
+                    max-width: 100% !important;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .content-container {
+                    @media only screen and (max-width: 1024px) {
+                        padding-bottom: 0;
+                    }
+                }
+                .image-wrapper {
+                    padding: 40% 0;
+                }
+            }
+
+        }
+       
     }
     &.bg-img {
         background-position: center;

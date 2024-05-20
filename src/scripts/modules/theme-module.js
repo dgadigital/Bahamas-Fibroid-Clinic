@@ -133,15 +133,14 @@ AppName.Modules.ThemeModule = (function () {
 
   var _media_video = () => { 
     // Slick on Video Gallery - Testimonial video slider
-    $('.media-video').click(function () {
+    $('.video-mediaVideoModal-btn').click(function () {
     var videoSrc = $(this).data('video-src');
-    $('#youtubeVideo').attr('src', videoSrc);
-    console.log("dasd");
+    $('#youtubeVideoMediaVideoModal').attr('src', videoSrc);
     });
 
     // Reset video source when modal is hidden
     $('#mediaVideoModal').on('hidden.bs.modal', function () {
-        $('#youtubeVideo').attr('src', '');
+        $('#youtubeVideoMediaVideoModal').attr('src', '');
     });
   }
 
