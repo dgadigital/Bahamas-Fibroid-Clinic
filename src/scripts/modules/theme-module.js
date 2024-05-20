@@ -195,48 +195,93 @@ AppName.Modules.ThemeModule = (function () {
   }
 
 
-  var _faq_hub = () => { 
-    var acc = document.getElementsByClassName("accordion"); 
-    var i; 
-
-    for (i = 0; i < acc.length; i++) { 
-      acc[i].addEventListener("click", function() { 
-        this.classList.toggle("active"); 
-        var panel = this.nextElementSibling; 
-        var sign = this.querySelector('.sign'); 
-        if (panel.style.display === "block") { 
-          panel.style.display = "none"; 
-          sign.textContent = '+'; 
-        } else { 
-          panel.style.display = "block"; 
-          sign.textContent = '-'; 
-        } 
-      }); 
-    } 
+  var _faq_hub = () => {
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+  
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        // Check if the clicked accordion button is within the currently visible accordion content
+        var isWithinVisibleContent = this.closest('.accordion-content[data-content="' + $('.tablinks.active').data('tab') + '"]');
+  
+        if (isWithinVisibleContent) {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          var sign = this.querySelector('.sign');
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+            sign.textContent = '+';
+          } else {
+            panel.style.display = "block";
+            sign.textContent = '-';
+          }
+          toggleReadMore(this);
+        }
+      });
+    }
   }
-
+  
+  var toggleReadMore = (accordionItem) => {
+    var teaser = accordionItem.querySelector('.teaser');
+    var fullText = accordionItem.querySelector('.full-text');
+  
+    if (accordionItem.classList.contains('active')) {
+      teaser.style.display = "none";
+      fullText.style.display = "block";
+    } else {
+      teaser.style.display = "block";
+      fullText.style.display = "none";
+    }
+  }
+  
   var _button_tabs = () => {
     $(document).ready(function() {
       // Hide all accordion content on page load
       $('.accordion-content').hide();
-    
+  
       // Show the first accordion content by default
       $('.accordion-content:first').show();
-    
+  
+      // Add active class to the first button tab
+      $('.tablinks').first().addClass('active');
+  
       // Handle button tab clicks
       $('.tablinks').click(function() {
-        // Get the data-tab value of the clicked button
-        var tabId = $(this).data('tab');
-    
+        // Remove active class from all button tabs
+        $('.tablinks').removeClass('active');
+  
+        // Add active class to the clicked button tab
+        $(this).addClass('active');
+  
         // Hide all accordion content
         $('.accordion-content').hide();
-    
+  
         // Show the accordion content with the corresponding data-content value
-        $('.accordion-content[data-content="' + tabId + '"]').show();
+        $('.accordion-content[data-content="' + $(this).data('tab') + '"]').show();
       });
     });
-    
   }
+  
+
+  var _active_tabs = () => {
+    // Pure JavaScript
+document.querySelectorAll('.nav-link').forEach(button => {
+  button.addEventListener('click', () => {
+    document.querySelectorAll('.nav-link').forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+  });
+});
+
+// jQuery
+$('.nav-link').click(function() {
+  $('.nav-link').removeClass('active');
+  $(this).addClass('active');
+});
+
+
+  }
+  
+  
 
   /////////////////////
   // Public Methods //
@@ -252,6 +297,7 @@ AppName.Modules.ThemeModule = (function () {
     _video_testimonials();
     _faq_hub();
     _button_tabs();
+    _active_tabs();
 
   };
 
