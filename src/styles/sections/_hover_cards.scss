@@ -75,6 +75,11 @@
                     ul {
                         list-style: none;
                         padding-left: 22px;
+                        padding-right: 15%;
+
+                        @media only screen and (max-width: 1199px) {
+                            padding-right: 0%;
+                        }
 
                         li {
                             position: relative;
@@ -118,11 +123,6 @@
                         color:#fff;
                         text-decoration: none;
                         text-transform: uppercase;
-
-                        @media only screen and (max-width: 1199px) { 
-                            position: relative;
-                            bottom: 0;
-                        }
                     }
                 }
             }
@@ -160,6 +160,26 @@
         ul {
             li { 
                 margin: 10px 0;
+            }
+        }
+    }
+    .hover-cards {
+        .card-container  {
+            flex-wrap: wrap;
+            justify-content: center;
+                .card-block {
+                    width: 45%;
+                    margin-bottom: 30px;
+                }
+        }
+        .hover-card-footer { 
+            justify-content: center;
+            padding: 20px;
+            h3 {
+                margin-right: 0 !important;
+            }
+            .btn {
+                margin-right: 0 !important;
             }
         }
     }

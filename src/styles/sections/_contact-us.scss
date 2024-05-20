@@ -1,5 +1,11 @@
 .contact-us {
+    p {
+        color:#282716;
+    }
     .contact-details {
+        p {
+            font-family: $inter-medium;
+        }
         .img-container {
             @media only screen and (max-width: 767px) { 
                 text-align: center;
@@ -11,7 +17,7 @@
             line-height: 60px;
             font-size: 5rem;
             @media only screen and (max-width: 767px) { 
-                font-size: 2.5rem;
+                font-size: 3rem;
             }
         }
         .icon-field {
