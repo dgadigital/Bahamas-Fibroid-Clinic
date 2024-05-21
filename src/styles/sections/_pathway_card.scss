@@ -3,6 +3,9 @@
         .card-content {
             &:not(:last-child) {
                 position: relative;
+                @media only screen and (max-width: 991px) {  
+                    margin-bottom: 70px;
+                }
                 &::after {
                     content: "";
                     width: 40px;
@@ -15,7 +18,10 @@
                     background-position: center;
                     background-repeat: no-repeat;
                     @media only screen and (max-width: 991px) {  
-                       display: none;
+                        right: 45%;
+                        top: auto;
+                        bottom: -45px;
+                        transform: rotate(90deg);
                     }
                     
                 }
