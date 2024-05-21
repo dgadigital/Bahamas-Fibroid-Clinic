@@ -78,6 +78,15 @@ footer {
             font-family: $inter-semiBold;
             font-size: 16px;
             color: #282716;
+
+            a {
+                color: $text-color;
+
+                &:hover {
+                    color: $desert-color;
+                    text-decoration: none;
+                }
+            }
         }
     }
 }
