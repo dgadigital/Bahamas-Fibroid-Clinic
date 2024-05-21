@@ -1,5 +1,83 @@
-//main: ../main.scss
+footer {
+    padding: 50px 0 50px 0;
+    background-color: #F6F5F3;
 
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the footer of the site/application.
-// -----------------------------------------------------------------------------
+    .footer-row {
+        display: flex;
+        flex-wrap: wrap;
+
+        @media (max-width: 991px) {
+            flex-direction: column;
+        }
+
+        .footer-menus {
+            display: flex;
+            width: 50%;
+            flex-wrap: wrap;
+
+            @media (max-width: 991px) {
+                width: 100%;
+            }
+            
+            .menu {
+                padding-right: 25px;
+                width: 33.333%;
+
+                @media (max-width: 767px) {
+                    width: 100%;
+                    padding-right: 0;
+                }
+
+                &:last-child {
+                    @media (max-width: 991px) {
+                        padding-right: 0;
+                    }
+                }
+
+
+                .title {
+                    padding-bottom: 20px;
+                    color: #93938A;
+                    text-transform: capitalize;
+                    font-family: $inter-bold;
+                }
+            }
+        }
+
+        .footer-logos {
+            padding-left: 50px;
+            width: 50%;
+
+            @media (max-width: 991px) {
+                padding-left: 0;
+                padding-top: 30px;
+                width: 100%;
+            }   
+
+            p {
+                padding-top: 30px;
+                font-family: $inter-bold;
+            }
+
+            .social-footer {
+                display: flex;
+                padding-top: 20px;
+
+                a {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+
+    ul {
+        padding: 0;
+        list-style: none;
+
+        li {
+            font-family: $inter-semiBold;
+            font-size: 16px;
+            color: #282716;
+        }
+    }
+}
