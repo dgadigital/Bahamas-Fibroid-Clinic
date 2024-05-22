@@ -22,10 +22,10 @@
     line-height: .7em;
     padding-bottom: 40px;
 
-    @media only screen and (max-width: 991px) { 
+    @media only screen and (max-width: 991px) {
         font-size: 4.5rem;
     }
-    @media only screen and (max-width: 767px) { 
+    @media only screen and (max-width: 767px) {
         font-size: 2.5rem;
     }
 }
@@ -59,7 +59,7 @@
 
       .accordion-text {
         @media (max-width: 430px) {
-          
+
           width: 80%;
           max-width: 80%;
         }
@@ -67,7 +67,7 @@
         @media (max-width: 500px) {
           width: 80%;
           max-width: 80%;
-          
+
         }
       }
 
@@ -92,7 +92,6 @@
       #text {
         padding-right: 20px;
       }
-      
 
       .full-text {
         display: none;
@@ -127,7 +126,7 @@
           height: 30px;
           margin-right: 0;
           margin-left: 30px;
-          
+
         }
       }
     }
@@ -154,7 +153,7 @@
 
       @media (max-width: 991px) {
         padding-right: 40px;
-        
+
       }
     }
   }
@@ -186,6 +185,11 @@
         padding: 0 30px;
       }
     }
+
+    // Unset margin bottom for the last .nav-item
+    .nav-item:last-child {
+      margin-bottom: 0;
+    }
   }
 
   @media (max-width: 1200px) {
@@ -213,7 +217,7 @@
 
       @media (max-width: 1200px) {
         justify-content: center;
-        
+
       }
 
       @media (max-width: 991px) {
@@ -227,17 +231,22 @@
         justify-content: center;
         flex: unset !important;
 
+        @media (max-width: 991px) {
+          margin-bottom: 10px;
+
+        }
+
         .select-topic{
           color: #282716;
 
           @media (max-width: 1200px) {
             padding-right: 10px;
-            
+
           }
 
           @media (max-width: 991px) {
+            padding-top: 10px;
             padding-bottom: 10px;
-            
           }
         }
 
