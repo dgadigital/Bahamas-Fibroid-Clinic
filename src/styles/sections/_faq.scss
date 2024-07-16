@@ -1,0 +1,85 @@
+.two-column-image-faq-content {
+    padding: 0;
+    overflow: hidden;
+
+    .signature-font {
+        @media (max-width: 991px) {
+            text-align: center;
+            font-size: 3.5rem;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .two-column-image-faq-content .faq-column {
+        padding: 40px 35px;
+    }
+}
+
+@media (min-width: 992px) {
+    .two-column-image-faq-content .faq-column {
+        padding: 100px;
+    }
+}
+
+@media (min-width: 992px) {
+    .img-column .img-fluid {
+        display: none;
+    }
+}
+
+.sign-q-wrapper {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.sign.collapse, .sign.collapsing {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background: url(../assets/images/plus-sign-square.svg) no-repeat;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.sign.collapse.show {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background: url(../assets/images/minus-sign-square.svg) no-repeat;
+    z-index: 1;
+}
+
+.question-toggle-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    height: 41px;
+}
+
+.question-toggle {
+    z-index: 1000;
+}
+
+.question-toggle {
+    color: #000;
+    font-family: $inter-bold;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    padding-left: 80px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.faq-repeater {
+    .card-body {
+        font-size: 16px;
+        color: #282716;
+        padding-left: 80px;
+    }
+}

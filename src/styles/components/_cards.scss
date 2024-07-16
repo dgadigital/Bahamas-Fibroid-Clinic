@@ -9,6 +9,14 @@
         padding-bottom: 66%;
     }
 
+    a {
+        color: $text-color;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
     .title {
 
         h3 {

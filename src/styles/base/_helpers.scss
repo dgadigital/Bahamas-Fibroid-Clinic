@@ -44,7 +44,7 @@
     font-size: 3.5rem;
   }
   @media only screen and (max-width: 767px) {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -120,5 +120,203 @@
 
 
 
+.sticky_nav_slide {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  top: 79px;
+  position: sticky;
+  z-index: 1010;
+  background-color: #c9c9c4;
+  box-shadow: 0px 4px 5px 0px rgba(40, 39, 22, 0.10);
+  // backdrop-filter: blur(50px);
+
+  @media (max-width: 1199px) {
+    top: 79px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 0;
+  padding-bottom: 0;
+    top: 78px;
+  }
+
+  .container-box {
+    // display: flex;
+    // align-items: center;
+  }
+
+  .btn-solid {
+    @media(max-width: 1199px) {
+      display: none;
+    }
+  }
+
+  .category-bar {
+      position: sticky;
+      top: 79px;;
+      z-index: 1010;
+      padding: 0;
+      // background-color: #c9c9c4;
+      // box-shadow: 0px 4px 5px 0px rgba(40, 39, 22, 0.10);
+      // backdrop-filter: blur(50px);
+
+      @media(max-width: 1199px) {
+          top: 79px;
+      }
+
+      @media(max-width: 991px) {
+          top: 120px;
+      }
+
+      .container {
+          position: relative;
+          padding-right: 30px;
+          padding-left: 30px;
+      }
+
+      .category-row {
+       
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          @media(max-width: 1199px) {
+              overflow: hidden;
+          }
+      }
+      
+      .category-list {
+          list-style: none;
+          display: flex;
+          justify-content: center;
+          margin: 0;
+          padding: 0;
+          width: fit-content;
+          // margin: auto;
+
+          &.slick-slider {
+              position: initial;
+          }
+
+          li {
+              position: relative;
+              padding: 12px 15px;
+              font-size: 15px;
+              // white-space: nowrap;
+              text-transform: uppercase;
+              max-width: 192px;
+              text-align: center;
+              display: flex;
+              align-items: center;
+
+              &.active a {
+                  color: $text-color;
+                  font-family: $inter-medium;
+              }
+
+              a {
+                color: #fff;
+              }
+          }
+
+          .slick-prev {
+              position: absolute;
+              left: 5px;
+              background-color: transparent;
+              background-image: url(../assets/images/left.png);
+              background-repeat: no-repeat;
+              background-position: center;
+              width: 24px;
+              height: 24px;
+              border: 0;
+              top: 50%;
+              transform: translateY(-50%);
+
+              &:focus {
+                  outline: none;
+              }
+          }
+
+          .slick-next {
+              position: absolute;
+              right: 5px;
+              background-color: transparent;
+              background-image: url(../assets/images/right.png);
+              background-repeat: no-repeat;
+              background-position: center;
+              width: 24px;
+              height: 24px;
+              box-shadow: -15px 0 6px 10px #c9c9c4;
+              border: 0;
+              top: 50%;
+              transform: translateY(-50%);
+
+              &:focus {
+                  outline: none;
+              }
+          }
+      }
+  }
+
+  .desktop-bar {
+      display: none;
+
+      @media (min-width: 768px) {
+          display: block;
+      }
+  }
+
+  .mobile-bar {
+      display: none;
+      box-shadow: 0 0 21px -1px rgba(115,115,115,.18);
+
+
+      @media (max-width: 767px) {
+          display: block;
+      }
+
+      .bar-top {
+          padding-top: 10px;
+          text-align: center;
+          padding-bottom: 10px;
+          background-image: url(../assets/images/select.png);
+          background-repeat: no-repeat;
+          background-position-x: 96%;
+          background-position-y: 50%;
+          background-size: 16px;
+          padding-right: 20px;
+          padding-left: 20px;
+          cursor: pointer;
+          color: $text-color;
+      }
+
+      .slide-drawer {
+          height: 0;
+          min-height: 1px;
+          overflow: hidden;
+
+          &.active {
+              height: auto;
+          }
+
+          a {
+              display: block;
+              text-align: center;
+              font-size: 14px;
+              color: #fff;
+              padding-bottom: 10px;
+
+              &:last-child() {
+                  padding-bottom: 15px;
+              }
+          }
+
+          .selected {
+              color: $text-color;
+          }
+      }
+  }
+}
+ 
 
 

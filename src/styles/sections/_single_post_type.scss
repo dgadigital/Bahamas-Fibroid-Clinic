@@ -17,14 +17,20 @@
             font-size:33px;
             font-family: $inter-semiBold;
             @media only screen and (max-width: 991px) { 
-                position: relative;
+                // position: relative;
                 padding: 20px;
-                font-size:25px;
+                font-size: 22px;
             }
+
+            @media only screen and (max-width: 767px) { 
+                padding: 15px;
+                font-size: 18px;
+            }
+
         }
     }
     .rte {
-        h2 {
+        h3 {
             margin-top: 30px;
             font-size: 22px;
             color: #000;
@@ -164,6 +170,17 @@
             }
             .image-wrapper {
                 padding-bottom: 65%;
+
+                .image-content-logo {
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        right: 8px;
+                        left: auto;
+                        top: 8px;
+                    }
+                }
+
                 .inner-title {
                     position: absolute;
                     left: 0;

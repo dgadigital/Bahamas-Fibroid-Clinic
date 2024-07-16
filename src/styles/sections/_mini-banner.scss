@@ -35,6 +35,18 @@
                 width: 100%;
             }
 
+            .signature-font {
+                margin-bottom: 0;
+                font-size: 99px;
+
+                @media (max-width: 991px) {
+                    font-size: 4.5rem;
+                }
+
+                @media (max-width: 767px) {
+                    font-size: 3rem;
+                }
+            }
 
             h3 {
                 text-align: left;
@@ -61,5 +73,9 @@
 
     .bg-azura {
         background-color: $azura-color;
+    }
+
+    .bg-grey {
+        background-color: #d6d1ca;
     }
 }
