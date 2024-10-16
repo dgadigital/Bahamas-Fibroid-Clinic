@@ -136,3 +136,29 @@ section {
 strong {
   font-family: $inter-bold;
 }
+
+.client-results {
+
+  .modal-header {
+    position: relative;
+    justify-content: center;
+    font-family: "Inter Semibold";
+    border-bottom: 0;
+    
+    button {
+      position: absolute;
+      right: 15px;
+      top: 18px;
+    }
+  }
+
+  .modal-body {
+    padding: 0 15px;
+  }
+
+  .modal-footer {
+    border-top: 0;
+    font-size: 14px;
+    text-align: center;
+  }
+}

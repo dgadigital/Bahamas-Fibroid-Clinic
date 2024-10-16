@@ -21,6 +21,11 @@
             margin: 0 15px;
             transition: transform .8s ease;
 
+            &.count-3 {
+                width: 33.333%;
+                min-height: 565px;
+            }
+
             &:hover {
                 cursor: pointer;
             }
@@ -200,6 +205,10 @@
                 .card-block {
                     width: 45%;
                     margin-bottom: 30px;
+
+                    &.count-3 {
+                        min-height: 430px;
+                    }
                 }
         }
         .hover-card-footer { 
@@ -222,6 +231,11 @@
                     width: 100%;
                     margin-left: 0;
                     margin-right: 0;
+
+                    &.count-3 {
+                        width: 100%;
+                        min-height: 430px;
+                    }
                 }
         }
    
