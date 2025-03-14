@@ -152,6 +152,16 @@
         padding: 10px 40px;
         background-color: #D9D9D9;
 
+        justify-content: space-between;
+
+        .btn-wrapper {
+            display: flex;
+
+            @media (max-width: 767px) {
+                flex-direction: column;
+            }
+        }
+
         h3 {
             color:$text-color;
 
